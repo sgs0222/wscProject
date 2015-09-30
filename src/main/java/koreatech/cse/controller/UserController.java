@@ -4,10 +4,13 @@ import koreatech.cse.domain.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
 
 @Controller
 
@@ -25,7 +28,10 @@ public class UserController {
     @ResponseBody
     public String signup(@ModelAttribute User user, BindingResult result) {
         if (result.hasErrors()) {
-            //DO SOMETHING
+            List<FieldError> errors = result.getFieldErrors();
+            for (FieldError error : errors ) {
+                System.out.println (error.getObjectName() + " - " + error.getDefaultMessage());
+            }
         }
 
         System.out.println("user = " + user);

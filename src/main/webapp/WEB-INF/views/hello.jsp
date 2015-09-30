@@ -6,7 +6,7 @@
 <body>
 Hello, ${textFromController}<br/>
 ${name}<br/>
-<img src="resources/images/spring.png"/>
+<img src="/resources/images/spring.png"/>
 
 </body>
 </html>
