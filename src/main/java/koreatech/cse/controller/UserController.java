@@ -3,6 +3,7 @@ package koreatech.cse.controller;
 import koreatech.cse.domain.Searchable;
 import koreatech.cse.domain.User;
 import koreatech.cse.repository.UserMapper;
+import koreatech.cse.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
@@ -19,6 +20,8 @@ import java.util.List;
 public class UserController {
     @Inject
     private UserMapper userMapper;
+    @Inject
+    private UserService userService;
 
 
     @RequestMapping("/signup")
@@ -31,21 +34,11 @@ public class UserController {
     @Transactional
     @RequestMapping(value="/signup", method= RequestMethod.POST)
     @ResponseBody
-    public String signup(@ModelAttribute User user, BindingResult result) {
-        if (result.hasErrors()) {
-            List<FieldError> errors = result.getFieldErrors();
-            for (FieldError error : errors ) {
-                System.out.println (error.getObjectName() + " - " + error.getDefaultMessage());
-            }
-        }
-
-        userMapper.insert(user);
-        //double i = 3 / 0;
-        //System.out.println("i = " + i);
-        System.out.println("user = " + user);
+    public String signup(@ModelAttribute User user) {
+        userService.signup(user);
         return "success";
-
     }
+
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list(Model model, @RequestParam(required=false) String name, @RequestParam(required=false) String email, @RequestParam(required=false) String order) {
