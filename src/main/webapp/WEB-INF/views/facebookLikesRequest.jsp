@@ -5,12 +5,10 @@
     <title>Edit</title>
 </head>
 <body>
-DaumBook Results<br/>
-
-${daumBook}
-
-<c:forEach var="u" items="${users}">
-    ${u}<br/>
-</c:forEach>
+페이스북 친구 검색<br/>
+<form action="/oauth2/facebookLikes" method="GET">
+    <input type="text" name="userId" value="${userId}"/>
+    <input type="submit" value="검색">
+</form>
 </body>
 </html>

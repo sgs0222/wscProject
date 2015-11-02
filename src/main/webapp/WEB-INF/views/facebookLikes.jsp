@@ -5,12 +5,10 @@
     <title>Edit</title>
 </head>
 <body>
-DaumBook Results<br/>
+<h2>Facebook 친구 검색 결과: 사용자 ID - ${userId}</h2>
 
-${daumBook}
-
-<c:forEach var="u" items="${users}">
-    ${u}<br/>
+<c:forEach var="item" items="${facebookLike.data}">
+    ${item.name}, ${item.id}, ${item.createdTime}<br/><br/>
 </c:forEach>
 </body>
 </html>

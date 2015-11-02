@@ -5,12 +5,10 @@
     <title>Edit</title>
 </head>
 <body>
-DaumBook Results<br/>
+<h2>다음 책 검색 결과: 질의어 - ${searchWord}</h2>
 
-${daumBook}
-
-<c:forEach var="u" items="${users}">
-    ${u}<br/>
+<c:forEach var="item" items="${daumBook.channel.item}">
+    ${item.title}, ${item.authorT} ${item.pubDate}<br/><br/>
 </c:forEach>
 </body>
 </html>

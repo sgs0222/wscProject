@@ -2,6 +2,7 @@ package koreatech.cse.controller;
 
 import koreatech.cse.domain.Searchable;
 import koreatech.cse.domain.User;
+import koreatech.cse.repository.AuthorityMapper;
 import koreatech.cse.repository.UserMapper;
 import koreatech.cse.service.UserService;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.inject.Inject;
 
 @Controller
-
 @RequestMapping("/user")
 public class UserController {
     @Inject
@@ -21,6 +21,8 @@ public class UserController {
     @Inject
     private UserService userService;
 
+    @Inject
+    private AuthorityMapper authorityMapper;
 
     @RequestMapping("/signup")
     public String signup(Model model) {
@@ -71,10 +73,9 @@ public class UserController {
     }
 
     @RequestMapping(value="/signinSuccess")
-    @ResponseBody
     public String signinSuccess() {
         System.out.println("signin Success");
-        return "signinSuccess";
+        return "redirect:/";
     }
 
     @RequestMapping(value="/signinFailed")

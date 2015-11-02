@@ -3,12 +3,18 @@
        xmlns:sec="http://www.springframework.org/schema/security"
        xsi:schemaLocation="
     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd">
 
     <sec:global-method-security secured-annotations="enabled" pre-post-annotations="enabled" />
     <sec:http use-expressions="true">
-        <sec:form-login login-page="/user/signin" default-target-url="/user/signinSuccess" authentication-failure-url="/user/signinFailed"/>
-        <sec:logout logout-url="/user/signout" logout-success-url="/user/signin" />
+        <sec:form-login login-page="/user/signin"
+                        default-target-url="/user/signinSuccess"
+                        authentication-failure-url="/user/signinFailed"
+                        username-parameter="j_username"
+                        password-parameter="j_password"
+                        login-processing-url="/j_spring_security_check"/>
+        <sec:logout logout-url="/j_spring_security_logout"
+                    logout-success-url="/" />
         <sec:intercept-url pattern="/user/onlyUserByXml" access="hasRole('ROLE_USER')" />
         <sec:intercept-url pattern="/user/onlyAdminByXml" access="hasRole('ROLE_ADMIN')" />
         <sec:intercept-url pattern="/**" access="permitAll" />
