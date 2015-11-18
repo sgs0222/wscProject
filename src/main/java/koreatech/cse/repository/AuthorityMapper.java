@@ -22,4 +22,6 @@ public interface AuthorityMapper {
     @Delete("DELETE FROM AUTHORITIES WHERE ID = #{id}")
     void delete(Authority authority);
 
+    @Select("SELECT count(*) FROM AUTHORITIES WHERE ROLE='ROLE_USER'")
+    int countAuthoritiesRoleUser();
 }
