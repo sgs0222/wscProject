@@ -38,10 +38,16 @@ public class HomeController {
     }
 
     @RequestMapping("/env3")
-    public String env2(Model model) {
+    public String env3(Model model) {
         model.addAttribute("textFromController", env);
         return "hello";
     }
+    @RequestMapping("/env4")
+    public String env4(Model model) {
+        model.addAttribute("textFromController", env);
+        return "hello";
+    }
+
 
     @RequestMapping("/requestParamTest")
     public String requestParamTest(@RequestParam(name = "a", required=false, defaultValue = "0") int a,
