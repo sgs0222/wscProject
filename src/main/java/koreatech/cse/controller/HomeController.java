@@ -31,11 +31,12 @@ public class HomeController {
         return "hello";
     }
 
-    @RequestMapping("/env2")
+    @RequestMapping("/test")
     public String env2(Model model) {
         model.addAttribute("textFromController", env);
         return "hello";
     }
+
 
     @RequestMapping("/env3")
     public String env3(Model model) {
@@ -47,7 +48,6 @@ public class HomeController {
         model.addAttribute("textFromController", env);
         return "hello";
     }
-
 
     @RequestMapping("/requestParamTest")
     public String requestParamTest(@RequestParam(name = "a", required=false, defaultValue = "0") int a,
