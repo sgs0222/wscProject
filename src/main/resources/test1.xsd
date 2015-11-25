@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="job-search" type="job-searchType"/>
+  <xs:complexType name="positionType">
+    <xs:sequence>
+      <xs:element name="title">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="(용인)스마트폰 어플 및 SW 테스트 연구원"/>
+            <xs:enumeration value="외국계 IT Support Supervisor 채용"/>
+            <xs:enumeration value="[급] IT 전략기획 전문가(대기업) 초빙"/>
+            <xs:enumeration value="[공덕역]SKT마포센터 일반 답변 [주5일][정규직]"/>
+            <xs:enumeration value=" [주5일][정규직]문의답변,정보변경,정보조회업무"/>
+            <xs:enumeration value="[ 내일마감]대규모 정규직 채용건"/>
+            <xs:enumeration value="[분당KT/정자역/통신비지원]스마트폰대표번호고객상담원"/>
+            <xs:enumeration value="[강동구/정규직전환/신입가능]나이스정보통신 전산OP"/>
+            <xs:enumeration value="대교문고 본사 전산서버 관리자 모집"/>
+            <xs:enumeration value="당산역) 삼성SDS 임직원대상 인바운드 상담원 모집"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="locationType" name="location"/>
+      <xs:element type="job-typeType" name="job-type"/>
+      <xs:element type="industryType" name="industry"/>
+      <xs:element type="job-categoryType" name="job-category"/>
+      <xs:element name="open-quantity">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="15"/>
+            <xs:enumeration value="0"/>
+            <xs:enumeration value="16"/>
+            <xs:enumeration value="00"/>
+            <xs:enumeration value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="experience-levelType" name="experience-level"/>
+      <xs:element type="required-education-levelType" name="required-education-level"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="salaryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="code" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="companyType">
+    <xs:sequence>
+      <xs:element type="nameType" name="name"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="job-categoryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="code" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="close-typeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="code" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="locationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="code" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="job-typeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="code" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="nameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="href" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="job-searchType">
+    <xs:sequence>
+      <xs:element type="jobsType" name="jobs"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="industryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="code" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="experience-levelType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="code" use="optional"/>
+        <xs:attribute type="xs:string" name="min" use="optional"/>
+        <xs:attribute type="xs:string" name="max" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="required-education-levelType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="code" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="jobsType">
+    <xs:sequence>
+      <xs:element type="jobType" name="job" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="count"/>
+    <xs:attribute type="xs:string" name="start"/>
+    <xs:attribute type="xs:string" name="total"/>
+  </xs:complexType>
+  <xs:complexType name="jobType">
+    <xs:sequence>
+      <xs:element name="id">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="25424328"/>
+            <xs:enumeration value="25416759"/>
+            <xs:enumeration value="25411696"/>
+            <xs:enumeration value="25406627"/>
+            <xs:enumeration value="25406618"/>
+            <xs:enumeration value="25406613"/>
+            <xs:enumeration value="25400835"/>
+            <xs:enumeration value="25396670"/>
+            <xs:enumeration value="25389426"/>
+            <xs:enumeration value="25385729"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="url">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25424328#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+            <xs:enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25416759#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+            <xs:enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25411696#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+            <xs:enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25406627#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+            <xs:enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25406618#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+            <xs:enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25406613#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+            <xs:enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25400835#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+            <xs:enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25396670#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+            <xs:enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25389426#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+            <xs:enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25385729#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="active"/>
+      <xs:element name="posting-timestamp">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1448411801"/>
+            <xs:enumeration value="1448343922"/>
+            <xs:enumeration value="1448325923"/>
+            <xs:enumeration value="1448286531"/>
+            <xs:enumeration value="1448286442"/>
+            <xs:enumeration value="1448286368"/>
+            <xs:enumeration value="1448268946"/>
+            <xs:enumeration value="1448259980"/>
+            <xs:enumeration value="1448242002"/>
+            <xs:enumeration value="1448185191"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="modification-timestamp">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1448411801"/>
+            <xs:enumeration value="1448343922"/>
+            <xs:enumeration value="1448325999"/>
+            <xs:enumeration value="1448412533"/>
+            <xs:enumeration value="1448412548"/>
+            <xs:enumeration value="1448412515"/>
+            <xs:enumeration value="1448346658"/>
+            <xs:enumeration value="1448259980"/>
+            <xs:enumeration value="1448323573"/>
+            <xs:enumeration value="1448359695"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="opening-timestamp">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1448409600"/>
+            <xs:enumeration value="1448341200"/>
+            <xs:enumeration value="1448323200"/>
+            <xs:enumeration value="1448283600"/>
+            <xs:enumeration value="1448265600"/>
+            <xs:enumeration value="1448258400"/>
+            <xs:enumeration value="1448240400"/>
+            <xs:enumeration value="1448182800"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="expiration-timestamp">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1448442000"/>
+            <xs:enumeration value="1448521200"/>
+            <xs:enumeration value="1448424000"/>
+            <xs:enumeration value="1448434800"/>
+            <xs:enumeration value="1448449200"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="close-typeType" name="close-type"/>
+      <xs:element type="companyType" name="company"/>
+      <xs:element type="positionType" name="position"/>
+      <xs:element name="keyword">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ASP,OA,전산입력·편집,사무보조,리서치·모니터링,실험보조,통신,전자,Hardware,품질엔지니어,테스트엔지니어,웹마스터,Linux계열,웹엔지니어,QA·테스터,검증,네트워크관리,보안,네트워크엔지니어,보안관제,보안기술,HW·하드웨어,SW·소프트웨어,유지보수,AS,SW품질테스터"/>
+            <xs:enumeration value="패션,네트워크관리,네트워크엔지니어,Windows2000,HW·하드웨어,SW·소프트웨어,유지보수,AS"/>
+            <xs:enumeration value="네트웍구축,정보설계·IA"/>
+            <xs:enumeration value="네트웍구축,통신,와이브로,인터넷전화,무선통신,사무보조,게시판관리,인바운드,인터넷·통신,콜센터상담,전화주문,CS,고객상담,고객응대,회원관리,통합센터(멀티센터),SV(슈퍼바이저),QAA·통화품질,CS강사·교육,콜센터매니저,파트장·운영보조,통신,이동통신,모바일통신,LAN·케이블,무선통신"/>
+            <xs:enumeration value="통신,텔레콤,모바일,모바일게임,인터넷전화,전산입력·편집,아웃바운드,TM,인터넷·통신,홈쇼핑·쇼핑몰,증권·보험·카드,인바운드,콜센터상담,CS,고객상담,고객지원,고객응대,회원관리,통신,통신네트워크"/>
+            <xs:enumeration value="네트웍구축,통신,모바일,서버관리,네트워크관리,보안,서버구축,보안관제,HW·하드웨어,SW·소프트웨어,유지보수,SW품질테스터,데이터베이스,DBA,안전,품질관리"/>
+            <xs:enumeration value="서적·음반,서버관리,네트워크관리,보안,시스템운영"/>
+            <xs:enumeration value="SI·시스템통합,Excel·도표,PowerPoint,OA,사무보조,리서치·모니터링,인바운드,콜센터상담,CS,고객상담,고객지원,고객응대,전화교환,PDA·스마트폰,플래시APP"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="salaryType" name="salary"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

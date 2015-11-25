@@ -36,8 +36,7 @@ public class HomeController {
         model.addAttribute("textFromController", env);
         return "hello";
     }
-
-
+    
     @RequestMapping("/env3")
     public String env3(Model model) {
         model.addAttribute("textFromController", env);
