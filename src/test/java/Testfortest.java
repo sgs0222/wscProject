@@ -1,4 +1,5 @@
 import koreatech.cse.service.UserService;
+import mypackage.*;
 import org.apache.ibatis.annotations.ResultType;
 import org.junit.After;
 import org.junit.Before;
@@ -41,9 +42,10 @@ public class Testfortest {
     private UserService userService;
     @Value("${env.text}")
     private String envText;
+    private JobType jobType;
 
     int a;
-
+/*
     @Before
     public void setup() {
         System.out.println("setup");
@@ -53,7 +55,7 @@ public class Testfortest {
         System.out.println("wac: " + wac);
         System.out.println("this: " + this);
     }
-
+*/
     @Test
     public void jobTest() {
         String jobUrl = "http://api.saramin.co.kr/job-search";
@@ -64,16 +66,35 @@ public class Testfortest {
 
             System.out.println("job :" + builder.build().encode().toUri());
 
-            ResultType resultType = restTemplate.getForObject(builder.build().encode().toUri(), ResultType.class);
+            /*
+            ResultType jobsType = restTemplate.getForObject(builder.build().encode().toUri(),
+                    ResultType.class);
 
-            String to
+            String totalCnt = jobsType.toString();
+            System.out.println(totalCnt);
+            */
+
+            JobType jobType = restTemplate.getForObject(builder.build().encode().toUri(), JobType.class);
+            String id = jobType.getId();
+            System.out.println(id);
+
+            JobsType jobsType = restTemplate.getForObject(builder.build().encode().toUri(), JobsType.class);
+            String count = jobsType.getCount();
+            System.out.println(count);
+
+            //SalaryType salaryType = restTemplate.getForObject(builder.build().encode().toUri(), SalaryType.class);
+            //String value = salaryType.getValue();
+            //System.out.println(value);
+
+            //System.out.println(jobType.getCompany().getName().getValue().toString());
+            //System.out.println(resultType.getMntInfo().get(0).getMntiName());
 
         } catch (HttpClientErrorException e) {
-
+            System.out.println("Exception : " + e.getStatusCode() + ": " + e.getStatusText());
         }
     }
 
-
+/*
     @Test
     public void diTest() throws Exception {
         assertNotEquals(userService, null);
@@ -99,5 +120,5 @@ public class Testfortest {
     public  void wrapup() {
         System.out.println("wrapup");
         System.out.println();
-    }
+    }*/
 }
