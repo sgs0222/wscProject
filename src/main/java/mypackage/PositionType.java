@@ -20,16 +20,16 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="title">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="(용인)스마트폰 어플 및 SW 테스트 연구원"/>
- *               &lt;enumeration value="외국계 IT Support Supervisor 채용"/>
- *               &lt;enumeration value="[급] IT 전략기획 전문가(대기업) 초빙"/>
- *               &lt;enumeration value="[공덕역]SKT마포센터 일반 답변 [주5일][정규직]"/>
- *               &lt;enumeration value=" [주5일][정규직]문의답변,정보변경,정보조회업무"/>
- *               &lt;enumeration value="[ 내일마감]대규모 정규직 채용건"/>
- *               &lt;enumeration value="[분당KT/정자역/통신비지원]스마트폰대표번호고객상담원"/>
- *               &lt;enumeration value="[강동구/정규직전환/신입가능]나이스정보통신 전산OP"/>
- *               &lt;enumeration value="대교문고 본사 전산서버 관리자 모집"/>
- *               &lt;enumeration value="당산역) 삼성SDS 임직원대상 인바운드 상담원 모집"/>
+ *               &lt;enumeration value="PHP웹개발자(프론트엔드)모집"/>
+ *               &lt;enumeration value="좋은 회사, 뽐뿌에서 웹퍼블리셔를 모십니다. "/>
+ *               &lt;enumeration value="신사역 온라인마케팅회사에서 함께할 직원을 채용합니다."/>
+ *               &lt;enumeration value="[상암 본사/경력직] 케이토토 본사 웹디자이너 채용"/>
+ *               &lt;enumeration value="웹퍼블리셔 경력자 모집"/>
+ *               &lt;enumeration value="당신의집사 채용 공고 (웹/앱 개발, 웹/앱 디자인)"/>
+ *               &lt;enumeration value="웹(모바일)서비스 기획 및 운영 "/>
+ *               &lt;enumeration value="퍼블리싱가능한 웹디자이너"/>
+ *               &lt;enumeration value="유명 종합통신기업의 UI,UX개발 경력 채용"/>
+ *               &lt;enumeration value="[주5일/여의도] 웹디자이너 / 웹디자인 모집 "/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
@@ -40,11 +40,11 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="open-quantity">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="15"/>
  *               &lt;enumeration value="0"/>
- *               &lt;enumeration value="16"/>
  *               &lt;enumeration value="00"/>
  *               &lt;enumeration value="1"/>
+ *               &lt;enumeration value="○"/>
+ *               &lt;enumeration value="2"/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>

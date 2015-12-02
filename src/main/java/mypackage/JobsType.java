@@ -39,6 +39,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class JobsType {
 
+    @JacksonXmlElementWrapper(useWrapping=false)
     protected List<JobType> job;
     @XmlAttribute(name = "count")
     protected String count;
@@ -69,8 +70,6 @@ public class JobsType {
      * 
      * 
      */
-
-    @JacksonXmlElementWrapper(useWrapping=false)
     public List<JobType> getJob() {
         if (job == null) {
             job = new ArrayList<JobType>();

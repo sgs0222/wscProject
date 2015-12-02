@@ -20,32 +20,32 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="id">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="25424328"/>
- *               &lt;enumeration value="25416759"/>
- *               &lt;enumeration value="25411696"/>
- *               &lt;enumeration value="25406627"/>
- *               &lt;enumeration value="25406618"/>
- *               &lt;enumeration value="25406613"/>
- *               &lt;enumeration value="25400835"/>
- *               &lt;enumeration value="25396670"/>
- *               &lt;enumeration value="25389426"/>
- *               &lt;enumeration value="25385729"/>
+ *               &lt;enumeration value="25494076"/>
+ *               &lt;enumeration value="25493153"/>
+ *               &lt;enumeration value="25492575"/>
+ *               &lt;enumeration value="25491812"/>
+ *               &lt;enumeration value="25489800"/>
+ *               &lt;enumeration value="25489125"/>
+ *               &lt;enumeration value="25488120"/>
+ *               &lt;enumeration value="25487887"/>
+ *               &lt;enumeration value="25487008"/>
+ *               &lt;enumeration value="25486608"/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
  *         &lt;element name="url">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25424328#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
- *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25416759#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
- *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25411696#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
- *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25406627#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
- *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25406618#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
- *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25406613#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
- *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25400835#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
- *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25396670#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
- *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25389426#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
- *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25385729#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+ *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25494076#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+ *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25493153#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+ *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25492575#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+ *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25491812#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+ *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25489800#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+ *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25489125#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+ *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25488120#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+ *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25487887#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+ *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25487008#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
+ *               &lt;enumeration value="http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25486608#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
@@ -53,57 +53,59 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="posting-timestamp">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="1448411801"/>
- *               &lt;enumeration value="1448343922"/>
- *               &lt;enumeration value="1448325923"/>
- *               &lt;enumeration value="1448286531"/>
- *               &lt;enumeration value="1448286442"/>
- *               &lt;enumeration value="1448286368"/>
- *               &lt;enumeration value="1448268946"/>
- *               &lt;enumeration value="1448259980"/>
- *               &lt;enumeration value="1448242002"/>
- *               &lt;enumeration value="1448185191"/>
+ *               &lt;enumeration value="1449024250"/>
+ *               &lt;enumeration value="1449021253"/>
+ *               &lt;enumeration value="1449019247"/>
+ *               &lt;enumeration value="1449017305"/>
+ *               &lt;enumeration value="1448973014"/>
+ *               &lt;enumeration value="1448968945"/>
+ *               &lt;enumeration value="1448964384"/>
+ *               &lt;enumeration value="1448962957"/>
+ *               &lt;enumeration value="1448960751"/>
+ *               &lt;enumeration value="1448959487"/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
  *         &lt;element name="modification-timestamp">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="1448411801"/>
- *               &lt;enumeration value="1448343922"/>
- *               &lt;enumeration value="1448325999"/>
- *               &lt;enumeration value="1448412533"/>
- *               &lt;enumeration value="1448412548"/>
- *               &lt;enumeration value="1448412515"/>
- *               &lt;enumeration value="1448346658"/>
- *               &lt;enumeration value="1448259980"/>
- *               &lt;enumeration value="1448323573"/>
- *               &lt;enumeration value="1448359695"/>
+ *               &lt;enumeration value="1449024250"/>
+ *               &lt;enumeration value="1449021332"/>
+ *               &lt;enumeration value="1449019247"/>
+ *               &lt;enumeration value="1449017305"/>
+ *               &lt;enumeration value="1448973251"/>
+ *               &lt;enumeration value="1448968945"/>
+ *               &lt;enumeration value="1448964384"/>
+ *               &lt;enumeration value="1448962957"/>
+ *               &lt;enumeration value="1448960868"/>
+ *               &lt;enumeration value="1448959487"/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
  *         &lt;element name="opening-timestamp">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="1448409600"/>
- *               &lt;enumeration value="1448341200"/>
- *               &lt;enumeration value="1448323200"/>
- *               &lt;enumeration value="1448283600"/>
- *               &lt;enumeration value="1448265600"/>
- *               &lt;enumeration value="1448258400"/>
- *               &lt;enumeration value="1448240400"/>
- *               &lt;enumeration value="1448182800"/>
+ *               &lt;enumeration value="1449021600"/>
+ *               &lt;enumeration value="1449018000"/>
+ *               &lt;enumeration value="1449014400"/>
+ *               &lt;enumeration value="1448971200"/>
+ *               &lt;enumeration value="1448967600"/>
+ *               &lt;enumeration value="1448964000"/>
+ *               &lt;enumeration value="1448960400"/>
+ *               &lt;enumeration value="1448956800"/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
  *         &lt;element name="expiration-timestamp">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="1448442000"/>
- *               &lt;enumeration value="1448521200"/>
- *               &lt;enumeration value="1448424000"/>
- *               &lt;enumeration value="1448434800"/>
- *               &lt;enumeration value="1448449200"/>
+ *               &lt;enumeration value="1449500399"/>
+ *               &lt;enumeration value="1451573999"/>
+ *               &lt;enumeration value="1988118000"/>
+ *               &lt;enumeration value="1449727200"/>
+ *               &lt;enumeration value="2019567600"/>
+ *               &lt;enumeration value="1449046800"/>
+ *               &lt;enumeration value="1454144400"/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
@@ -113,14 +115,16 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="keyword">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;enumeration value="ASP,OA,전산입력·편집,사무보조,리서치·모니터링,실험보조,통신,전자,Hardware,품질엔지니어,테스트엔지니어,웹마스터,Linux계열,웹엔지니어,QA·테스터,검증,네트워크관리,보안,네트워크엔지니어,보안관제,보안기술,HW·하드웨어,SW·소프트웨어,유지보수,AS,SW품질테스터"/>
- *               &lt;enumeration value="패션,네트워크관리,네트워크엔지니어,Windows2000,HW·하드웨어,SW·소프트웨어,유지보수,AS"/>
- *               &lt;enumeration value="네트웍구축,정보설계·IA"/>
- *               &lt;enumeration value="네트웍구축,통신,와이브로,인터넷전화,무선통신,사무보조,게시판관리,인바운드,인터넷·통신,콜센터상담,전화주문,CS,고객상담,고객응대,회원관리,통합센터(멀티센터),SV(슈퍼바이저),QAA·통화품질,CS강사·교육,콜센터매니저,파트장·운영보조,통신,이동통신,모바일통신,LAN·케이블,무선통신"/>
- *               &lt;enumeration value="통신,텔레콤,모바일,모바일게임,인터넷전화,전산입력·편집,아웃바운드,TM,인터넷·통신,홈쇼핑·쇼핑몰,증권·보험·카드,인바운드,콜센터상담,CS,고객상담,고객지원,고객응대,회원관리,통신,통신네트워크"/>
- *               &lt;enumeration value="네트웍구축,통신,모바일,서버관리,네트워크관리,보안,서버구축,보안관제,HW·하드웨어,SW·소프트웨어,유지보수,SW품질테스터,데이터베이스,DBA,안전,품질관리"/>
- *               &lt;enumeration value="서적·음반,서버관리,네트워크관리,보안,시스템운영"/>
- *               &lt;enumeration value="SI·시스템통합,Excel·도표,PowerPoint,OA,사무보조,리서치·모니터링,인바운드,콜센터상담,CS,고객상담,고객지원,고객응대,전화교환,PDA·스마트폰,플래시APP"/>
+ *               &lt;enumeration value="전자상거래,쇼핑몰,php,Mysql,APM,Ajax,HTML코딩,퍼블리셔,웹표준·웹접근성,HTML5,CSS·스타일가이드"/>
+ *               &lt;enumeration value="종합포털,컨텐츠제공,커뮤니티,CSS"/>
+ *               &lt;enumeration value="성형외과,피부과,웹기획,웹마케팅,온라인마케팅,웹디자인,포토샵"/>
+ *               &lt;enumeration value="아웃소싱,웹디자인,포토샵,드림위버,일러스트레이터,HTML코딩,퍼블리셔,웹표준·웹접근성,HTML5"/>
+ *               &lt;enumeration value="웹에이전시,CSS,HTML코딩,퍼블리셔,웹표준·웹접근성"/>
+ *               &lt;enumeration value="청소·방역,아웃소싱,파견대행,웹프로그래머,Java,html,Ajax,SW·소프트웨어,웹디자인,UI·UX디자인,HTML코딩,퍼블리셔,CSS·스타일가이드"/>
+ *               &lt;enumeration value="비금융지주회사,웹마스터,Linux계열,웹프로듀서,QA·테스터,검증,웹기획,스토리보드,UI기획,모바일기획,웹서비스기획,웹프로그래머,ASP,Java,xml,Mysql,전산전공,MS-SQL,HTML코딩,퍼블리셔,웹표준·웹접근성,HTML5,CSS·스타일가이드"/>
+ *               &lt;enumeration value="산업디자인,컨텐츠운영,웹디자인,포토샵,드림위버,CSS,HTML  ,HTML코딩,퍼블리셔,웹표준·웹접근성"/>
+ *               &lt;enumeration value="통신,UI·UX디자인,HTML코딩,퍼블리셔"/>
+ *               &lt;enumeration value="SI·시스템통합,ERP,시스템관리,소프트웨어개발,사이트운영,헬프데스크,컨텐츠운영,e-러닝운영,카페·블로그관리,웹디자인,포토샵,플래쉬,드림위버,자바스크립트,HTML코딩,단순웹작업,퍼블리셔,웹표준·웹접근성,웹디자인강의,프로그래밍,웹마스터,그래픽디자인,3D,코렐드로우,기업이미지"/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>

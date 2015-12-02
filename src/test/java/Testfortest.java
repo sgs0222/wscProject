@@ -1,3 +1,7 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.request.GetRequest;
+import com.sun.deploy.net.HttpResponse;
 import koreatech.cse.service.UserService;
 import mypackage.*;
 import org.apache.ibatis.annotations.ResultType;
@@ -58,11 +62,13 @@ public class Testfortest {
 */
     @Test
     public void jobTest() {
-        String jobUrl = "http://api.saramin.co.kr/job-search";
+        String jobUrl = "http://api.saramin.co.kr/job-search?";
 
         RestTemplate restTemplate = new RestTemplate();
+        ObjectMapper objectMapper = new ObjectMapper();
+
         try {
-            UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(jobUrl);
+            UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(jobUrl).queryParam("keywords", "웹 퍼블리셔");
 
             System.out.println("job :" + builder.build().encode().toUri());
 
@@ -73,20 +79,16 @@ public class Testfortest {
             String totalCnt = jobsType.toString();
             System.out.println(totalCnt);
             */
+            //builder.build().encode().toUri() + "keywords={}"
 
-            JobType jobType = restTemplate.getForObject(builder.build().encode().toUri(), JobType.class);
-            String id = jobType.getId();
-            System.out.println(id);
-
-            JobsType jobsType = restTemplate.getForObject(builder.build().encode().toUri(), JobsType.class);
-            String count = jobsType.getCount();
-            System.out.println(count);
+            JobSearchType jobType= restTemplate.getForObject(builder.build().encode().toUri(), JobSearchType.class);
+            String keyword = jobType.getJobs().getJob().get(0).getKeyword();
+            System.out.println(keyword);
 
             //SalaryType salaryType = restTemplate.getForObject(builder.build().encode().toUri(), SalaryType.class);
             //String value = salaryType.getValue();
             //System.out.println(value);
 
-            //System.out.println(jobType.getCompany().getName().getValue().toString());
             //System.out.println(resultType.getMntInfo().get(0).getMntiName());
 
         } catch (HttpClientErrorException e) {
