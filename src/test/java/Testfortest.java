@@ -68,18 +68,13 @@ public class Testfortest {
         ObjectMapper objectMapper = new ObjectMapper();
 
         try {
-            UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(jobUrl).queryParam("keywords", "웹 퍼블리셔");
+            UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(jobUrl)
+                    .queryParam("keywords", "프로그래머")
+                    .queryParam("job_category", "4")///it관련
+                    .queryParam("loc_cd", "101000")//서울
+                    .queryParam("edu_lv", "8");//대학교 졸업 이상
 
             System.out.println("job :" + builder.build().encode().toUri());
-
-            /*
-            ResultType jobsType = restTemplate.getForObject(builder.build().encode().toUri(),
-                    ResultType.class);
-
-            String totalCnt = jobsType.toString();
-            System.out.println(totalCnt);
-            */
-            //builder.build().encode().toUri() + "keywords={}"
 
             JobSearchType jobType= restTemplate.getForObject(builder.build().encode().toUri(), JobSearchType.class);
             String keyword = jobType.getJobs().getJob().get(0).getKeyword();
