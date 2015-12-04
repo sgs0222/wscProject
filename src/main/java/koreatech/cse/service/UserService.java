@@ -4,6 +4,7 @@ import koreatech.cse.domain.Authority;
 import koreatech.cse.domain.User;
 import koreatech.cse.domain.oauth2.daum.DaumProfileDetail;
 import koreatech.cse.domain.oauth2.facebook.FacebookProfile;
+import koreatech.cse.domain.oauth2.naver.NaverProfile;
 import koreatech.cse.repository.AuthorityMapper;
 import koreatech.cse.repository.UserMapper;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -111,6 +112,31 @@ public class UserService implements UserDetailsService {
 
         return "redirect:/";
     }
+
+    public String naverLogin(HttpServletRequest request, NaverProfile naverProfile) throws Exception{
+        User user = userMapper.findByEmail(naverProfile.getId());
+        if (user == null) {
+            user = new User();
+            user.setEmail(naverProfile.getId());
+            user.setName(naverProfile.getName());
+            user.setAge(-2);
+            user.setPassword("0000");
+            signup(user);
+        }
+
+        List<Authority> authorities = authorityMapper.findByUserId(user.getId());
+        user.setAuthorities(authorities);
+        Authentication authentication = new UsernamePasswordAuthenticationToken(user, "0000", user.getAuthorities());
+
+        SecurityContext securityContext = SecurityContextHolder.getContext();
+        securityContext.setAuthentication(authentication);
+        HttpSession session = request.getSession(true);
+        session.setAttribute("SPRING_SECURITY_CONTEXT", securityContext);
+
+        return "redirect:/";
+    }
+
+
 
     public int countUsers() {
         return userMapper.count();
