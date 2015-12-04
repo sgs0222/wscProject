@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<job-search>
+    <jobs count="10" start="0" total="478">
+        <job>
+            <id>25494076</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25494076#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1449024250</posting-timestamp>
+            <modification-timestamp>1449024250</modification-timestamp>
+            <opening-timestamp>1449021600</opening-timestamp>
+            <expiration-timestamp>1449500399</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/6267723#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)푸드나무]]></name>
+            </company>
+            <position>
+                <title><![CDATA[PHP웹개발자(프론트엔드)모집]]></title>
+                <location code="101130"><![CDATA[서울 &gt; 마포구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="304">쇼핑몰·오픈마켓</industry>
+                <job-category code="404,413">웹프로그래머, HTML·웹표준·UI개발</job-category>
+                <open-quantity>0</open-quantity>
+                <experience-level code="2" min="3" max="">경력3년↑</experience-level>
+                <required-education-level code="0">학력무관</required-education-level>
+            </position>
+            <keyword>전자상거래,쇼핑몰,php,Mysql,APM,Ajax,HTML코딩,퍼블리셔,웹표준·웹접근성,HTML5,CSS·스타일가이드</keyword>
+            <salary code="99">면접후 결정</salary>
+        </job>
+        <job>
+            <id>25493153</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25493153#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1449021253</posting-timestamp>
+            <modification-timestamp>1449021332</modification-timestamp>
+            <opening-timestamp>1449018000</opening-timestamp>
+            <expiration-timestamp>1451573999</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/4674903#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)뽐뿌커뮤니케이션]]></name>
+            </company>
+            <position>
+                <title><![CDATA[좋은 회사, 뽐뿌에서 웹퍼블리셔를 모십니다. ]]></title>
+                <location code="101200"><![CDATA[서울 &gt; 영등포구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="305">포털·인터넷·컨텐츠</industry>
+                <job-category code="412">웹디자인</job-category>
+                <open-quantity>0</open-quantity>
+                <experience-level code="2" min="2" max="">경력2년↑</experience-level>
+                <required-education-level code="0">학력무관</required-education-level>
+            </position>
+            <keyword>종합포털,컨텐츠제공,커뮤니티,CSS</keyword>
+            <salary code="99">면접후 결정</salary>
+        </job>
+        <job>
+            <id>25492575</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25492575#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1449019247</posting-timestamp>
+            <modification-timestamp>1449019247</modification-timestamp>
+            <opening-timestamp>1449018000</opening-timestamp>
+            <expiration-timestamp>1988118000</expiration-timestamp>
+            <close-type code="2">채용시</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/6624281#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)러브에스앤제이]]></name>
+            </company>
+            <position>
+                <title><![CDATA[신사역 온라인마케팅회사에서 함께할 직원을 채용합니다.]]></title>
+                <location code="101010"><![CDATA[서울 &gt; 강남구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="701">의료(진료과목별)</industry>
+                <job-category code="403,412">웹기획·웹마케팅·PM, 웹디자인</job-category>
+                <open-quantity>00</open-quantity>
+                <experience-level code="3" min="1" max="">신입/경력</experience-level>
+                <required-education-level code="6">고등학교졸업이상</required-education-level>
+            </position>
+            <keyword>성형외과,피부과,웹기획,웹마케팅,온라인마케팅,웹디자인,포토샵</keyword>
+            <salary code="8">2,200~2,400만원</salary>
+        </job>
+        <job>
+            <id>25491812</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25491812#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1449017305</posting-timestamp>
+            <modification-timestamp>1449017305</modification-timestamp>
+            <opening-timestamp>1449014400</opening-timestamp>
+            <expiration-timestamp>1449727200</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/29180#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)티오에스코리아]]></name>
+            </company>
+            <position>
+                <title><![CDATA[[상암 본사/경력직] 케이토토 본사 웹디자이너 채용]]></title>
+                <location code="101130,101140,101160,101210,101220,102030,102040,102050,102470"><![CDATA[서울 &gt; 마포구, 서울 &gt; 서대문구, 서울 &gt; 성동구, 서울 &gt; 용산구, 서울 &gt; 은평구, 경기 &gt; 고양시 덕양구, 경기 &gt; 고양시 일산동구, 경기 &gt; 고양시 일산서구, 경기 &gt; 파주시]]></location>
+                <job-type code="2,6">계약직,파견직</job-type>
+                <industry code="111">시설관리·경비·용역</industry>
+                <job-category code="412,413">웹디자인, HTML·웹표준·UI개발</job-category>
+                <open-quantity>1</open-quantity>
+                <experience-level code="2" min="2" max="">경력2년↑</experience-level>
+                <required-education-level code="7">대학졸업(2,3년)이상</required-education-level>
+            </position>
+            <keyword>아웃소싱,웹디자인,포토샵,드림위버,일러스트레이터,HTML코딩,퍼블리셔,웹표준·웹접근성,HTML5</keyword>
+            <salary code="10">2,600~2,800만원</salary>
+        </job>
+        <job>
+            <id>25489800</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25489800#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448973014</posting-timestamp>
+            <modification-timestamp>1448973251</modification-timestamp>
+            <opening-timestamp>1448971200</opening-timestamp>
+            <expiration-timestamp>2019567600</expiration-timestamp>
+            <close-type code="3">상시채용</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/5747097#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[newriver]]></name>
+            </company>
+            <position>
+                <title><![CDATA[웹퍼블리셔 경력자 모집]]></title>
+                <location code="101010"><![CDATA[서울 &gt; 강남구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="302">웹에이젼시</industry>
+                <job-category code="412,413">웹디자인, HTML·웹표준·UI개발</job-category>
+                <open-quantity>○</open-quantity>
+                <experience-level code="3" min="0" max="">신입/경력</experience-level>
+                <required-education-level code="0">학력무관</required-education-level>
+            </position>
+            <keyword>웹에이전시,CSS,HTML코딩,퍼블리셔,웹표준·웹접근성</keyword>
+            <salary code="0">회사내규에 따름</salary>
+        </job>
+        <job>
+            <id>25489125</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25489125#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448968945</posting-timestamp>
+            <modification-timestamp>1448968945</modification-timestamp>
+            <opening-timestamp>1448967600</opening-timestamp>
+            <expiration-timestamp>2019567600</expiration-timestamp>
+            <close-type code="3">상시채용</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/6846564#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[리호즈(주)]]></name>
+            </company>
+            <position>
+                <title><![CDATA[당신의집사 채용 공고 (웹/앱 개발, 웹/앱 디자인)]]></title>
+                <location code="101000"><![CDATA[서울 &gt; 서울전체]]></location>
+                <job-type code="1,4">정규직,인턴직</job-type>
+                <industry code="111">시설관리·경비·용역</industry>
+                <job-category code="404,411,412,413">웹프로그래머, 하드웨어·소프트웨어, 웹디자인, HTML·웹표준·UI개발</job-category>
+                <open-quantity>0</open-quantity>
+                <experience-level code="0" min="0" max="0">경력무관</experience-level>
+                <required-education-level code="7">대학졸업(2,3년)이상</required-education-level>
+            </position>
+            <keyword>청소·방역,아웃소싱,파견대행,웹프로그래머,Java,html,Ajax,SW·소프트웨어,웹디자인,UI·UX디자인,HTML코딩,퍼블리셔,CSS·스타일가이드</keyword>
+            <salary code="99">면접후 결정</salary>
+        </job>
+        <job>
+            <id>25488120</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25488120#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448964384</posting-timestamp>
+            <modification-timestamp>1448964384</modification-timestamp>
+            <opening-timestamp>1448964000</opening-timestamp>
+            <expiration-timestamp>1449046800</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/74938#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[빌리브넷]]></name>
+            </company>
+            <position>
+                <title><![CDATA[웹(모바일)서비스 기획 및 운영 ]]></title>
+                <location code="101000,101200,102000,108000"><![CDATA[서울 &gt; 서울전체, 서울 &gt; 영등포구, 경기 &gt; 경기전체, 인천 &gt; 인천전체]]></location>
+                <job-type code="1,2,6">정규직,계약직,파견직</job-type>
+                <industry code="405">기타금융</industry>
+                <job-category code="401,403,404,407,413">웹마스터·QA·테스터, 웹기획·웹마케팅·PM, 웹프로그래머, 응용프로그래머, HTML·웹표준·UI개발</job-category>
+                <open-quantity>2</open-quantity>
+                <experience-level code="0" min="0" max="0">경력무관</experience-level>
+                <required-education-level code="0">학력무관</required-education-level>
+            </position>
+            <keyword>비금융지주회사,웹마스터,Linux계열,웹프로듀서,QA·테스터,검증,웹기획,스토리보드,UI기획,모바일기획,웹서비스기획,웹프로그래머,ASP,Java,xml,Mysql,전산전공,MS-SQL,HTML코딩,퍼블리셔,웹표준·웹접근성,HTML5,CSS·스타일가이드</keyword>
+            <salary code="12">3,000~3,200만원</salary>
+        </job>
+        <job>
+            <id>25487887</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25487887#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448962957</posting-timestamp>
+            <modification-timestamp>1448962957</modification-timestamp>
+            <opening-timestamp>1448960400</opening-timestamp>
+            <expiration-timestamp>1454144400</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/6445938#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)에스엔피이노베이션]]></name>
+            </company>
+            <position>
+                <title><![CDATA[퍼블리싱가능한 웹디자이너]]></title>
+                <location code="101150"><![CDATA[서울 &gt; 서초구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="511">디자인·설계</industry>
+                <job-category code="406,412,413">컨텐츠·사이트운영, 웹디자인, HTML·웹표준·UI개발</job-category>
+                <open-quantity>0</open-quantity>
+                <experience-level code="2" min="3" max="">경력3년↑</experience-level>
+                <required-education-level code="0">학력무관</required-education-level>
+            </position>
+            <keyword>산업디자인,컨텐츠운영,웹디자인,포토샵,드림위버,CSS,HTML  ,HTML코딩,퍼블리셔,웹표준·웹접근성</keyword>
+            <salary code="99">면접후 결정</salary>
+        </job>
+        <job>
+            <id>25487008</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25487008#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448960751</posting-timestamp>
+            <modification-timestamp>1448960868</modification-timestamp>
+            <opening-timestamp>1448960400</opening-timestamp>
+            <expiration-timestamp>1988118000</expiration-timestamp>
+            <close-type code="2">채용시</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/4063005#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[드림솔루션]]></name>
+            </company>
+            <position>
+                <title><![CDATA[유명 종합통신기업의 UI,UX개발 경력 채용]]></title>
+                <location code="101230"><![CDATA[서울 &gt; 종로구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="306">네트워크·통신·모바일</industry>
+                <job-category code="412,413">웹디자인, HTML·웹표준·UI개발</job-category>
+                <open-quantity>0</open-quantity>
+                <experience-level code="0" min="0" max="0">경력무관</experience-level>
+                <required-education-level code="8">대학교졸업(4년)이상</required-education-level>
+            </position>
+            <keyword>통신,UI·UX디자인,HTML코딩,퍼블리셔</keyword>
+            <salary code="0">회사내규에 따름</salary>
+        </job>
+        <job>
+            <id>25486608</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25486608#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448959487</posting-timestamp>
+            <modification-timestamp>1448959487</modification-timestamp>
+            <opening-timestamp>1448956800</opening-timestamp>
+            <expiration-timestamp>1988118000</expiration-timestamp>
+            <close-type code="2">채용시</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/6272931#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[플랜브이 주식회사]]></name>
+            </company>
+            <position>
+                <title><![CDATA[[주5일/여의도] 웹디자이너 / 웹디자인 모집 ]]></title>
+                <location code="101000,101010,101040,101050,101070,101130,101150,101200,101210,101230,102000,102060,102070,102100,102180,102190,102200,102210,102320,102330"><![CDATA[서울 &gt; 서울전체, 서울 &gt; 강남구, 서울 &gt; 강서구, 서울 &gt; 관악구, 서울 &gt; 구로구, 서울 &gt; 마포구, 서울 &gt; 서초구, 서울 &gt; 영등포구, 서울 &gt; 용산구, 서울 &gt; 종로구, 경기 &gt; 경기전체, 경기 &gt; 과천시, 경기 &gt; 광명시, 경기 &gt; 군포시, 경기 &gt; 성남시, 경기 &gt; 성남시 분당구, 경기 &gt; 성남시 수정구, 경기 &gt; 성남시 중원구, 경기 &gt; 안양시, 경기 &gt; 안양시 동안구]]></location>
+                <job-type code="2,4">계약직,인턴직</job-type>
+                <industry code="301">솔루션·SI·ERP·CRM</industry>
+                <job-category code="406,412,413,415,1201">컨텐츠·사이트운영, 웹디자인, HTML·웹표준·UI개발, IT·디자인·컴퓨터교육, 그래픽디자인·CG</job-category>
+                <open-quantity>0</open-quantity>
+                <experience-level code="0" min="0" max="0">경력무관</experience-level>
+                <required-education-level code="0">학력무관</required-education-level>
+            </position>
+            <keyword>SI·시스템통합,ERP,시스템관리,소프트웨어개발,사이트운영,헬프데스크,컨텐츠운영,e-러닝운영,카페·블로그관리,웹디자인,포토샵,플래쉬,드림위버,자바스크립트,HTML코딩,단순웹작업,퍼블리셔,웹표준·웹접근성,웹디자인강의,프로그래밍,웹마스터,그래픽디자인,3D,코렐드로우,기업이미지</keyword>
+            <salary code="12">3,000~3,200만원</salary>
+        </job>
+    </jobs>
+</job-search>
