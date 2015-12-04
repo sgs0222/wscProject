@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<job-search>
+    <jobs count="10" start="0" total="61">
+        <job>
+            <id>25424328</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25424328#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448411801</posting-timestamp>
+            <modification-timestamp>1448411801</modification-timestamp>
+            <opening-timestamp>1448409600</opening-timestamp>
+            <expiration-timestamp>1448442000</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/74938#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[빌리브넷]]></name>
+            </company>
+            <position>
+                <title><![CDATA[(용인)스마트폰 어플 및 SW 테스트 연구원]]></title>
+                <location code="101000,101010,101150,101180,102000,102180,102220,102400,102410,102420,102430"><![CDATA[서울 &gt; 서울전체, 서울 &gt; 강남구, 서울 &gt; 서초구, 서울 &gt; 송파구, 경기 &gt; 경기전체, 경기 &gt; 성남시, 경기 &gt; 수원시, 경기 &gt; 용인시, 경기 &gt; 용인시 기흥구, 경기 &gt; 용인시 수지구, 경기 &gt; 용인시 처인구]]></location>
+                <job-type code="1,2,4,6">정규직,계약직,인턴직,파견직</job-type>
+                <industry code="301">솔루션·SI·ERP·CRM</industry>
+                <job-category code="108,308,401,402,411">사무보조·문서작성, 전기·전자·제어, 웹마스터·QA·테스터, 서버·네트워크·보안, 하드웨어·소프트웨어</job-category>
+                <open-quantity>15</open-quantity>
+                <experience-level code="0" min="0" max="0">경력무관</experience-level>
+                <required-education-level code="0">학력무관</required-education-level>
+            </position>
+            <keyword>ASP,OA,전산입력·편집,사무보조,리서치·모니터링,실험보조,통신,전자,Hardware,품질엔지니어,테스트엔지니어,웹마스터,Linux계열,웹엔지니어,QA·테스터,검증,네트워크관리,보안,네트워크엔지니어,보안관제,보안기술,HW·하드웨어,SW·소프트웨어,유지보수,AS,SW품질테스터</keyword>
+            <salary code="0">회사내규에 따름</salary>
+        </job>
+        <job>
+            <id>25416759</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25416759#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448343922</posting-timestamp>
+            <modification-timestamp>1448343922</modification-timestamp>
+            <opening-timestamp>1448341200</opening-timestamp>
+            <expiration-timestamp>1448521200</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/3272898#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[맨파워코리아]]></name>
+            </company>
+            <position>
+                <title><![CDATA[외국계 IT Support Supervisor 채용]]></title>
+                <location code="101000,101010"><![CDATA[서울 &gt; 서울전체, 서울 &gt; 강남구]]></location>
+                <job-type code="6">파견직</job-type>
+                <industry code="205">섬유·의류·패션</industry>
+                <job-category code="402,411">서버·네트워크·보안, 하드웨어·소프트웨어</job-category>
+                <open-quantity>0</open-quantity>
+                <experience-level code="2" min="1" max="">경력1년↑</experience-level>
+                <required-education-level code="7">대학졸업(2,3년)이상</required-education-level>
+            </position>
+            <keyword>패션,네트워크관리,네트워크엔지니어,Windows2000,HW·하드웨어,SW·소프트웨어,유지보수,AS</keyword>
+            <salary code="99">면접후 결정</salary>
+        </job>
+        <job>
+            <id>25411696</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25411696#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448325923</posting-timestamp>
+            <modification-timestamp>1448325999</modification-timestamp>
+            <opening-timestamp>1448323200</opening-timestamp>
+            <expiration-timestamp>1448442000</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/6237017#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)베스트에치알 (Best HR)]]></name>
+            </company>
+            <position>
+                <title><![CDATA[[급] IT 전략기획 전문가(대기업) 초빙]]></title>
+                <location code="101000"><![CDATA[서울 &gt; 서울전체]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="306">네트워크·통신·모바일</industry>
+                <job-category code="403">웹기획·웹마케팅·PM</job-category>
+                <open-quantity>0</open-quantity>
+                <experience-level code="2" min="5" max="">경력5년↑</experience-level>
+                <required-education-level code="8">대학교졸업(4년)이상</required-education-level>
+            </position>
+            <keyword>네트웍구축,정보설계·IA</keyword>
+            <salary code="99">면접후 결정</salary>
+        </job>
+        <job>
+            <id>25406627</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25406627#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448286531</posting-timestamp>
+            <modification-timestamp>1448412533</modification-timestamp>
+            <opening-timestamp>1448283600</opening-timestamp>
+            <expiration-timestamp>1448424000</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/51699#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)티오엠네트웍]]></name>
+            </company>
+            <position>
+                <title><![CDATA[[공덕역]SKT마포센터 일반 답변 [주5일][정규직]]]></title>
+                <location code="101000,101040,101050,101070,101080,101130,101140,101190,101200,101220,102000,102070,102100,102110,102140,102220,102270,102280,102320,102440,108000,108020,108030,108040,108050,108060,108070,108080,108100"><![CDATA[서울 &gt; 서울전체, 서울 &gt; 강서구, 서울 &gt; 관악구, 서울 &gt; 구로구, 서울 &gt; 금천구, 서울 &gt; 마포구, 서울 &gt; 서대문구, 서울 &gt; 양천구, 서울 &gt; 영등포구, 서울 &gt; 은평구, 경기 &gt; 경기전체, 경기 &gt; 광명시, 경기 &gt; 군포시, 경기 &gt; 김포시, 경기 &gt; 부천시, 경기 &gt; 수원시, 경기 &gt; 시흥시, 경기 &gt; 안산시, 경기 &gt; 안양시, 경기 &gt; 의왕시, 인천 &gt; 인천전체, 인천 &gt; 계양구, 인천 &gt; 남구, 인천 &gt; 남동구, 인천 &gt; 동구, 인천 &gt; 부평구, 인천 &gt; 서구, 인천 &gt; 연수구, 인천 &gt; 중구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="306">네트워크·통신·모바일</industry>
+                <job-category code="108,211,212,213,410">사무보조·문서작성, TM·인바운드, 고객센터·CS, QA·CS강사·수퍼바이저, 통신·모바일</job-category>
+                <open-quantity>16</open-quantity>
+                <experience-level code="0" min="0" max="0">경력무관</experience-level>
+                <required-education-level code="6">고등학교졸업이상</required-education-level>
+            </position>
+            <keyword>네트웍구축,통신,와이브로,인터넷전화,무선통신,사무보조,게시판관리,인바운드,인터넷·통신,콜센터상담,전화주문,CS,고객상담,고객응대,회원관리,통합센터(멀티센터),SV(슈퍼바이저),QAA·통화품질,CS강사·교육,콜센터매니저,파트장·운영보조,통신,이동통신,모바일통신,LAN·케이블,무선통신</keyword>
+            <salary code="8">2,200~2,400만원</salary>
+        </job>
+        <job>
+            <id>25406618</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25406618#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448286442</posting-timestamp>
+            <modification-timestamp>1448412548</modification-timestamp>
+            <opening-timestamp>1448283600</opening-timestamp>
+            <expiration-timestamp>1448424000</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/51699#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)티오엠네트웍]]></name>
+            </company>
+            <position>
+                <title><![CDATA[ [주5일][정규직]문의답변,정보변경,정보조회업무]]></title>
+                <location code="101000,101040,101050,101070,101080,101130,101140,101190,101200,101220,102000,102070,102100,102110,102140,102220,102270,102280,102320,102440,108000,108020,108030,108040,108050,108060,108070,108080,108100"><![CDATA[서울 &gt; 서울전체, 서울 &gt; 강서구, 서울 &gt; 관악구, 서울 &gt; 구로구, 서울 &gt; 금천구, 서울 &gt; 마포구, 서울 &gt; 서대문구, 서울 &gt; 양천구, 서울 &gt; 영등포구, 서울 &gt; 은평구, 경기 &gt; 경기전체, 경기 &gt; 광명시, 경기 &gt; 군포시, 경기 &gt; 김포시, 경기 &gt; 부천시, 경기 &gt; 수원시, 경기 &gt; 시흥시, 경기 &gt; 안산시, 경기 &gt; 안양시, 경기 &gt; 의왕시, 인천 &gt; 인천전체, 인천 &gt; 계양구, 인천 &gt; 남구, 인천 &gt; 남동구, 인천 &gt; 동구, 인천 &gt; 부평구, 인천 &gt; 서구, 인천 &gt; 연수구, 인천 &gt; 중구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="306">네트워크·통신·모바일</industry>
+                <job-category code="108,211,212,213,410">사무보조·문서작성, TM·인바운드, 고객센터·CS, QA·CS강사·수퍼바이저, 통신·모바일</job-category>
+                <open-quantity>16</open-quantity>
+                <experience-level code="0" min="0" max="0">경력무관</experience-level>
+                <required-education-level code="6">고등학교졸업이상</required-education-level>
+            </position>
+            <keyword>네트웍구축,통신,와이브로,인터넷전화,무선통신,사무보조,게시판관리,인바운드,인터넷·통신,콜센터상담,전화주문,CS,고객상담,고객응대,회원관리,통합센터(멀티센터),SV(슈퍼바이저),QAA·통화품질,CS강사·교육,콜센터매니저,파트장·운영보조,통신,이동통신,모바일통신,LAN·케이블,무선통신</keyword>
+            <salary code="9">2,400~2,600만원</salary>
+        </job>
+        <job>
+            <id>25406613</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25406613#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448286368</posting-timestamp>
+            <modification-timestamp>1448412515</modification-timestamp>
+            <opening-timestamp>1448283600</opening-timestamp>
+            <expiration-timestamp>1448424000</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/51699#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)티오엠네트웍]]></name>
+            </company>
+            <position>
+                <title><![CDATA[[ 내일마감]대규모 정규직 채용건]]></title>
+                <location code="101000,101040,101050,101070,101080,101130,101140,101190,101200,101220,102000,102070,102100,102110,102140,102220,102270,102280,102320,102440,108000,108020,108030,108040,108050,108060,108070,108080,108100"><![CDATA[서울 &gt; 서울전체, 서울 &gt; 강서구, 서울 &gt; 관악구, 서울 &gt; 구로구, 서울 &gt; 금천구, 서울 &gt; 마포구, 서울 &gt; 서대문구, 서울 &gt; 양천구, 서울 &gt; 영등포구, 서울 &gt; 은평구, 경기 &gt; 경기전체, 경기 &gt; 광명시, 경기 &gt; 군포시, 경기 &gt; 김포시, 경기 &gt; 부천시, 경기 &gt; 수원시, 경기 &gt; 시흥시, 경기 &gt; 안산시, 경기 &gt; 안양시, 경기 &gt; 의왕시, 인천 &gt; 인천전체, 인천 &gt; 계양구, 인천 &gt; 남구, 인천 &gt; 남동구, 인천 &gt; 동구, 인천 &gt; 부평구, 인천 &gt; 서구, 인천 &gt; 연수구, 인천 &gt; 중구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="306">네트워크·통신·모바일</industry>
+                <job-category code="108,211,212,213,410">사무보조·문서작성, TM·인바운드, 고객센터·CS, QA·CS강사·수퍼바이저, 통신·모바일</job-category>
+                <open-quantity>16</open-quantity>
+                <experience-level code="0" min="0" max="0">경력무관</experience-level>
+                <required-education-level code="6">고등학교졸업이상</required-education-level>
+            </position>
+            <keyword>네트웍구축,통신,와이브로,인터넷전화,무선통신,사무보조,게시판관리,인바운드,인터넷·통신,콜센터상담,전화주문,CS,고객상담,고객응대,회원관리,통합센터(멀티센터),SV(슈퍼바이저),QAA·통화품질,CS강사·교육,콜센터매니저,파트장·운영보조,통신,이동통신,모바일통신,LAN·케이블,무선통신</keyword>
+            <salary code="8">2,200~2,400만원</salary>
+        </job>
+        <job>
+            <id>25400835</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25400835#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448268946</posting-timestamp>
+            <modification-timestamp>1448346658</modification-timestamp>
+            <opening-timestamp>1448265600</opening-timestamp>
+            <expiration-timestamp>1448434800</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/6955460#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[YeLLOn]]></name>
+            </company>
+            <position>
+                <title><![CDATA[[분당KT/정자역/통신비지원]스마트폰대표번호고객상담원]]></title>
+                <location code="101000,101010,101050,101060,101070,101120,101150,101160,101180,101200,102000,102060,102140,102180,102190,102220,102280,102320,102400,102420"><![CDATA[서울 &gt; 서울전체, 서울 &gt; 강남구, 서울 &gt; 관악구, 서울 &gt; 광진구, 서울 &gt; 구로구, 서울 &gt; 동작구, 서울 &gt; 서초구, 서울 &gt; 성동구, 서울 &gt; 송파구, 서울 &gt; 영등포구, 경기 &gt; 경기전체, 경기 &gt; 과천시, 경기 &gt; 부천시, 경기 &gt; 성남시, 경기 &gt; 성남시 분당구, 경기 &gt; 수원시, 경기 &gt; 안산시, 경기 &gt; 안양시, 경기 &gt; 용인시, 경기 &gt; 용인시 수지구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="306">네트워크·통신·모바일</industry>
+                <job-category code="108,210,211,212,410">사무보조·문서작성, TM·아웃바운드, TM·인바운드, 고객센터·CS, 통신·모바일</job-category>
+                <open-quantity>00</open-quantity>
+                <experience-level code="0" min="0" max="0">경력무관</experience-level>
+                <required-education-level code="0">학력무관</required-education-level>
+            </position>
+            <keyword>통신,텔레콤,모바일,모바일게임,인터넷전화,전산입력·편집,아웃바운드,TM,인터넷·통신,홈쇼핑·쇼핑몰,증권·보험·카드,인바운드,콜센터상담,CS,고객상담,고객지원,고객응대,회원관리,통신,통신네트워크</keyword>
+            <salary code="9">2,400~2,600만원</salary>
+        </job>
+        <job>
+            <id>25396670</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25396670#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448259980</posting-timestamp>
+            <modification-timestamp>1448259980</modification-timestamp>
+            <opening-timestamp>1448258400</opening-timestamp>
+            <expiration-timestamp>1448442000</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/12381#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)키스템프]]></name>
+            </company>
+            <position>
+                <title><![CDATA[[강동구/정규직전환/신입가능]나이스정보통신 전산OP]]></title>
+                <location code="101000,102070,102090,102140,108000"><![CDATA[서울 &gt; 서울전체, 경기 &gt; 광명시, 경기 &gt; 구리시, 경기 &gt; 부천시, 인천 &gt; 인천전체]]></location>
+                <job-type code="10,2,6">계약직,파견직,계약직 (정규직 전환가능)</job-type>
+                <industry code="306">네트워크·통신·모바일</industry>
+                <job-category code="402,411,416,906">서버·네트워크·보안, 하드웨어·소프트웨어, 데이터베이스·DBA, 안전·품질·검사·관리</job-category>
+                <open-quantity>00</open-quantity>
+                <experience-level code="0" min="0" max="0">경력무관</experience-level>
+                <required-education-level code="7">대학졸업(2,3년)이상</required-education-level>
+            </position>
+            <keyword>네트웍구축,통신,모바일,서버관리,네트워크관리,보안,서버구축,보안관제,HW·하드웨어,SW·소프트웨어,유지보수,SW품질테스터,데이터베이스,DBA,안전,품질관리</keyword>
+            <salary code="4">1,400~1,600만원</salary>
+        </job>
+        <job>
+            <id>25389426</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25389426#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448242002</posting-timestamp>
+            <modification-timestamp>1448323573</modification-timestamp>
+            <opening-timestamp>1448240400</opening-timestamp>
+            <expiration-timestamp>1448442000</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/5229876#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)유엔제이코리아]]></name>
+            </company>
+            <position>
+                <title><![CDATA[대교문고 본사 전산서버 관리자 모집]]></title>
+                <location code="101000,101210,102000"><![CDATA[서울 &gt; 서울전체, 서울 &gt; 용산구, 경기 &gt; 경기전체]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="802">판매(상품품목별)</industry>
+                <job-category code="402">서버·네트워크·보안</job-category>
+                <open-quantity>1</open-quantity>
+                <experience-level code="2" min="1" max="1">경력 1~1년</experience-level>
+                <required-education-level code="0">학력무관</required-education-level>
+            </position>
+            <keyword>서적·음반,서버관리,네트워크관리,보안,시스템운영</keyword>
+            <salary code="7">2,000~2,200만원</salary>
+        </job>
+        <job>
+            <id>25385729</id>
+            <url>http://www.saramin.co.kr/zf_user/recruit/recruit-view/idx/25385729#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api</url>
+            <active>1</active>
+            <posting-timestamp>1448185191</posting-timestamp>
+            <modification-timestamp>1448359695</modification-timestamp>
+            <opening-timestamp>1448182800</opening-timestamp>
+            <expiration-timestamp>1448449200</expiration-timestamp>
+            <close-type code="1">접수마감일</close-type>
+            <company>
+                <name href="http://www.saramin.co.kr/zf_user/recruit/company-info-view/idx/6969098#utm_source=job-search-api&amp;utm_medium=api&amp;utm_campaign=saramin-job-search-api"><![CDATA[(주)제이마루]]></name>
+            </company>
+            <position>
+                <title><![CDATA[당산역) 삼성SDS 임직원대상 인바운드 상담원 모집]]></title>
+                <location code="101000,101040,101050,101070,101080,101120,101130,101190,101200,101210"><![CDATA[서울 &gt; 서울전체, 서울 &gt; 강서구, 서울 &gt; 관악구, 서울 &gt; 구로구, 서울 &gt; 금천구, 서울 &gt; 동작구, 서울 &gt; 마포구, 서울 &gt; 양천구, 서울 &gt; 영등포구, 서울 &gt; 용산구]]></location>
+                <job-type code="1">정규직</job-type>
+                <industry code="301">솔루션·SI·ERP·CRM</industry>
+                <job-category code="108,211,410,212">사무보조·문서작성, TM·인바운드, 통신·모바일, 고객센터·CS</job-category>
+                <open-quantity>00</open-quantity>
+                <experience-level code="3" min="0" max="">신입/경력</experience-level>
+                <required-education-level code="6">고등학교졸업이상</required-education-level>
+            </position>
+            <keyword>SI·시스템통합,Excel·도표,PowerPoint,OA,사무보조,리서치·모니터링,인바운드,콜센터상담,CS,고객상담,고객지원,고객응대,전화교환,PDA·스마트폰,플래시APP</keyword>
+            <salary code="7">2,000~2,200만원</salary>
+        </job>
+    </jobs>
+</job-search>

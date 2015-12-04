@@ -112,6 +112,30 @@ public class UserService implements UserDetailsService {
         return "redirect:/";
     }
 
+
+    public String naverLogin(HttpServletRequest request, FacebookProfile facebookProfile) throws Exception{
+        User user = userMapper.findByEmail(facebookProfile.getId());
+        if (user == null) {
+            user = new User();
+            user.setEmail(facebookProfile.getId());
+            user.setName(facebookProfile.getName());
+            user.setAge(-2);
+            user.setPassword("0000");
+            signup(user);
+        }
+
+        List<Authority> authorities = authorityMapper.findByUserId(user.getId());
+        user.setAuthorities(authorities);
+        Authentication authentication = new UsernamePasswordAuthenticationToken(user, "0000", user.getAuthorities());
+
+        SecurityContext securityContext = SecurityContextHolder.getContext();
+        securityContext.setAuthentication(authentication);
+        HttpSession session = request.getSession(true);
+        session.setAttribute("SPRING_SECURITY_CONTEXT", securityContext);
+
+        return "redirect:/";
+    }
+
     public int countUsers() {
         return userMapper.count();
     }
