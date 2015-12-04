@@ -49,17 +49,7 @@ public class Testfortest {
     private JobType jobType;
 
     int a;
-/*
-    @Before
-    public void setup() {
-        System.out.println("setup");
-        this.mockMvc = webAppContextSetup(this.wac).build();
-        int a = 10;
 
-        System.out.println("wac: " + wac);
-        System.out.println("this: " + this);
-    }
-*/
     @Test
     public void jobTest() {
         String jobUrl = "http://api.saramin.co.kr/job-search?";
@@ -69,53 +59,34 @@ public class Testfortest {
 
         try {
             UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(jobUrl)
-                    .queryParam("keywords", "프로그래머")
+                    .queryParam("keywords", "프로그래밍+IT")
                     .queryParam("job_category", "4")///it관련
                     .queryParam("loc_cd", "101000")//서울
-                    .queryParam("edu_lv", "8");//대학교 졸업 이상
+                    .queryParam("edu_lv", "8")//대학교 졸업 이상
+                    .queryParam("fields", "posting-date")//게시일 순으로 정렬
+                    .queryParam("count", "110");//max count
 
             System.out.println("job :" + builder.build().encode().toUri());
 
             JobSearchType jobType= restTemplate.getForObject(builder.build().encode().toUri(), JobSearchType.class);
-            String keyword = jobType.getJobs().getJob().get(0).getKeyword();
-            System.out.println(keyword);
 
-            //SalaryType salaryType = restTemplate.getForObject(builder.build().encode().toUri(), SalaryType.class);
-            //String value = salaryType.getValue();
-            //System.out.println(value);
+            String count = jobType.getJobs().getCount();
 
-            //System.out.println(resultType.getMntInfo().get(0).getMntiName());
+            System.out.println("Total count :" + count);
+
+            for(int i=0; i < Integer.parseInt(count); i++) {
+                String keyword = jobType.getJobs().getJob().get(i).getKeyword();
+                String company = jobType.getJobs().getJob().get(i).getCompany().getName().getHref();//링크 누르면 이동
+                String salary = jobType.getJobs().getJob().get(i).getSalary().getCode();
+
+                System.out.println(company);
+                System.out.println(keyword);
+                System.out.println(salary);
+            }
+
 
         } catch (HttpClientErrorException e) {
             System.out.println("Exception : " + e.getStatusCode() + ": " + e.getStatusText());
         }
     }
-
-/*
-    @Test
-    public void diTest() throws Exception {
-        assertNotEquals(userService, null);
-    }
-
-    @Test
-    public void userServiceTest() throws Exception {
-        assertEquals(userService.countAuthoritiesRoleUser(), userService.countUsers());
-    }
-
-    @Test
-    public void printProperties() {
-        System.out.println(userService);
-    }
-
-    @Test(expected = UsernameNotFoundException.class)
-    public void getUsers() throws Exception {
-        UserDetails userDetails = userService.loadUserByUsername("unknwn_id");
-        System.out.println(userDetails);
-    }
-
-    @After
-    public  void wrapup() {
-        System.out.println("wrapup");
-        System.out.println();
-    }*/
 }
