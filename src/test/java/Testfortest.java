@@ -84,7 +84,6 @@ public class Testfortest {
                 System.out.println(salary);
             }
 
-
         } catch (HttpClientErrorException e) {
             System.out.println("Exception : " + e.getStatusCode() + ": " + e.getStatusText());
         }

@@ -1,0 +1,228 @@
+<?xlml version="1.0" encoding="utf-8"?>
+<message type="response" service="naverservice.community.cafe">
+    <result xmlns="nhncorp.naverservice.community.cafe.ArticleList">
+        <itemCount>20</itemCount>
+        <articles>
+            <article>
+                <articleid>3941235</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[?끉?궛?떆] ?젣2?쉶 ?솴?궛踰뚯껌?뀈臾명븰?긽 怨듬え (~12/20)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.04. 10:52:56</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>34</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3941233</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[?젣二?4.3?룊?솕?옱?떒] ?젣4?쉶 ?젣二? 4.3?룊?솕臾명븰?긽 怨듬え?쟾(~12/20)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.04. 10:51:46</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>41</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3939917</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[援?由쎌쨷?븰?룄?꽌愿?]?븳援??븰?닠吏? ???옉沅뚯븞?궡?떆?뒪?뀥 ?꽕?씠諛? 怨듬え (~12/11)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.03. 11:25:25</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>89</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3939913</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[?썒吏꾩뵿?겕鍮?] ?젣1?쉶 ?썒吏꾨턿?겢?읇 ?뵒?옄?씤 肄섑뀗痢? 怨듬え?쟾 (~1/31)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.03. 11:24:43</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>52</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3939910</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[誘몃옒李쎌“怨쇳븰遺?] ?궡媛? 留뚮뱶?뒗 ?룄?떆 ?뵒?옄?씤 罹좏봽 怨듬え?쟾 (~12/10)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.03. 11:23:55</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>95</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3938349</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[寃쎄린?쁺?뼱留덉쓣] ?젣1?쉶 肄섑뀗痢? 怨듬え?쟾 (~12/16)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.02. 11:10:53</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>97</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3938343</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[?븳援쵣FO?뒪荑?] ?뙆??怨좊땲?븘 ?룆?썑媛? 怨듬え?쟾 (~12/21)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.02. 11:08:02</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>64</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3938325</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[?븳援??옣?븷?씤?옱?떒] ?젣7?쉶 ?옣?븷?쓽 ?옱?빐?꽍 ?끉臾몄뿰援ъ옄 怨듬え(~12/13)]]></subject>
+                <nickname><![CDATA[?뒪?럺?뾽怨듭?]]></nickname>
+                <writedate>2015.12.02. 10:54:38</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>363</readCount>
+                <commentCount>4</commentCount>
+            </article>
+
+            <article>
+                <articleid>3936882</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[源?媛??꽕] 源?諛λЦ?븰?긽 怨듬え?쟾 (~3/31)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.01. 11:10:37</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>265</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3936880</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[?쇅援먮?] ?젣5?쉶 援??젣湲곌뎄 泥댄뿕?닔湲? 怨듬え?쟾(~12/10)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.01. 11:09:42</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>81</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3936877</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[?꽌?슱?듅蹂꾩떆] 2016?뀈 ?떊?뀈 ?꽌?슱轅덉깉源??뙋 臾몄븞 怨듬え (~12/3) ]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.01. 11:09:04</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>73</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3936874</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[?삱肄?] Best&Worst 肄섑뀒?뒪?듃 ?닔湲? ?썑湲? 怨듬え?쟾 (~12/31)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.01. 11:08:06</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>57</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3936872</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[2015 ???븰(?썝)?깮 臾쇰쪟 ?떊湲곗닠 ?떊?궗?뾽怨듬え?쟾 (~12/29)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.12.01. 11:07:05</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>131</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3935302</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[11/30(?썡) 18:00 留덇컧] ?젣5?쉶 ???븳?쟻?떗?옄?궗 李⑺븳愿묎퀬怨듬え?쟾]]></subject>
+                <nickname><![CDATA[?뒪?럺?뾽怨듭?]]></nickname>
+                <writedate>2015.11.30. 11:00:47</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>61</readCount>
+                <commentCount>1</commentCount>
+            </article>
+
+            <article>
+                <articleid>3935294</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[誘쇱븻吏?] ?젇?? IT 湲고쉷?옄 ?꽑諛? 怨듬え?쟾 (~1/22)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.11.30. 10:58:02</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>272</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3935292</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[?씤泥쒕룄?떆怨듭궗] ?젣1?쉶 ???븰?깮 嫄댁텞?꽕怨? 怨듬え?쟾(~2/23) ]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.11.30. 10:57:09</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>88</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3935282</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[泥??샇?굹?씠?뒪] ?젣4?쉶 誘우쓬?닔湲? 怨듬え?쟾(~12/31) ]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.11.30. 10:52:34</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>96</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3932487</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[???긽嫄댁꽕] 嫄댁꽕?쉶?궗 ?븘?뙆?듃 釉뚮옖?뱶 ?꽕?엫怨듬え (~12/10)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.11.27. 12:30:31</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>140</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3932476</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[???슫?뼱?뒪] ?븰?깮 ?엫?썝?뱾?쓽 ?궗?뿰 怨듬え?쟾(~12/15)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.11.27. 12:26:04</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>90</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+            <article>
+                <articleid>3932474</articleid>
+                <menuid>485</menuid>
+                <subject><![CDATA[[援??꽭泥?] 50二쇰뀈 湲곕뀗 ?뿞釉붾읆, ?뒳濡쒓굔 怨듬え?쟾 (~1/8)]]></subject>
+                <nickname><![CDATA[怨듬え?쟾 吏??궎誘?]]></nickname>
+                <writedate>2015.11.27. 12:24:40</writedate>
+                <newArticle><![CDATA[false]]></newArticle>
+                <readCount>124</readCount>
+                <commentCount>0</commentCount>
+            </article>
+
+        </articles>
+    </result>
+</message>
