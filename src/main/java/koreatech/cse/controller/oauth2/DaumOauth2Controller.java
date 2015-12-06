@@ -27,10 +27,10 @@ import java.util.HashMap;
 @RequestMapping("/oauth2")
 public class DaumOauth2Controller {
     private static String daum_redirect_uri = "http://localhost:8080/oauth2/daum_callback";
-    private static String daum_client_id = "3830067531028078868";
-    private static String daum_client_secret = "a33b27426654f4859d3be713f256362a";
-    private static String daum_authorization_endpoint = "https://apis.daum.net/oauth2/authorize";
-    private static String daum_token_endpoint = "https://apis.daum.net/oauth2/token";
+    private static String daum_client_id = "1724655432138798151";
+    private static String daum_client_secret = "a7ab3755a0e1a9306179e73b07e68afb";
+    private static String daum_authorization_endpoint = "https://apis.daum.net/oauth2/authorize";                        //authorization url
+    private static String daum_token_endpoint = "https://apis.daum.net/oauth2/token";                                      //token url
     private static String daum_profile_url = "https://apis.daum.net/user/v1/show.json?access_token=";
     private static String daum_book_url = "https://apis.daum.net/search/book?apikey=e9ee0b0fc2a474e108b6cdb54f0ca063";
 

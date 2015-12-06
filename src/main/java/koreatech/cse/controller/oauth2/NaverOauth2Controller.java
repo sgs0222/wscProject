@@ -4,8 +4,17 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import koreatech.cse.domain.oauth2.naver.NaverProfile;
 import koreatech.cse.service.UserService;
+import org.springframework.http.client.SimpleClientHttpRequestFactory;
+import org.springframework.social.oauth2.AccessGrant;
+import org.springframework.social.oauth2.GrantType;
+import org.springframework.social.oauth2.OAuth2Parameters;
+import org.springframework.social.oauth2.OAuth2Template;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -31,11 +40,11 @@ import javax.inject.Inject;
 @RequestMapping("/oauth2")
 public class NaverOauth2Controller {
 
-    private static final String mydomain = "http%3A%2F%2Ftestoauth2.com%3A8080%2Foauth2%2FnaverCallback";
-    private static final String clientId = "2kx5uG4jHnTuzOWWbXag";
-    private static final String clientSecret = "_8lrsS0rNh";
-    private static final String requestUrl = "https://nid.naver.com/oauth2.0/authorize?client_id=" + clientId + "&response_type=code&redirect_uri="+ mydomain + "&state=";
-    private static final String userProfileUrl = "https://apis.naver.com/nidlogin/nid/getUserProfile.xml";
+    private static final String mydomain = "http%3A%2F%2Ftest.java.com%3A8080%2Foauth2%2Fnaver_callback";
+    private static final String clientId = "RD3eJvWPpsFxZpOGove0";
+    private static final String clientSecret = "dESVGc3bu1";
+    private static final String requestUrl = "https://nid.naver.com/oauth2.0/authorize?client_id=" + clientId + "&response_type=code&redirect_uri=" + mydomain + "&state=";
+
 
     @Inject
     private UserService userService;
@@ -44,11 +53,13 @@ public class NaverOauth2Controller {
         SecureRandom random = new SecureRandom();
         return new BigInteger(130, random).toString(32);
     }
-    public static Map<String, String> JSONStringToMap(String str){
-        Map<String,String> map = new HashMap<String,String>();
+
+    public static Map<String, String> JSONStringToMap(String str) {
+        Map<String, String> map = new HashMap<String, String>();
         ObjectMapper mapper = new ObjectMapper();
         try {
-            map = mapper.readValue(str, new TypeReference<HashMap<String,String>>() {});
+            map = mapper.readValue(str, new TypeReference<HashMap<String, String>>() {
+            });
         } catch (JsonParseException e) {
             e.printStackTrace();
         } catch (JsonMappingException e) {
@@ -66,14 +77,14 @@ public class NaverOauth2Controller {
             URL u = new URL(url);
             httpRequest = (HttpURLConnection) u.openConnection();
             httpRequest.setRequestProperty("Content-type", "text/xml; charset=UTF-8");
-            if(authorization != null){
+            if (authorization != null) {
                 httpRequest.setRequestProperty("Authorization", authorization);
             }
             httpRequest.connect();
             BufferedReader in = new BufferedReader(new InputStreamReader(httpRequest.getInputStream(), "UTF-8"));
             StringBuffer sb = new StringBuffer();
             String line = null;
-            while((line = in.readLine()) != null){
+            while ((line = in.readLine()) != null) {
                 sb.append(line);
                 sb.append("\n");
             }
@@ -101,13 +112,11 @@ public class NaverOauth2Controller {
 
     }
 
-
-
     @RequestMapping("/naverCallback")//call_back 함수
-    public String callback(@RequestParam String code,@RequestParam String state, HttpServletRequest request) /*throws UnsupportedEncodingException*/ {
+    public String callback(@RequestParam String code, @RequestParam String state, HttpServletRequest request) /*throws UnsupportedEncodingException*/ {
         System.out.println("naver Callback is called!!");
         System.out.println(code);
-       String storedState = (String) request.getSession().getAttribute("state");  //세션에 저장된 토큰을 받아옵니다.
+        String storedState = (String) request.getSession().getAttribute("state");  //세션에 저장된 토큰을 받아옵니다.
         if (!state.equals(storedState)) {             //세션에 저장된 토큰과 인증을 요청해서 받은 토큰이 일치하는지 검증합니다.
             System.out.println("401 unauthorized");   //인증이 실패했을 때의 처리 부분입니다.
             return "redirect:/";
@@ -119,7 +128,4 @@ public class NaverOauth2Controller {
         return "redirect:/";
 
     }
-
-
-
 }

@@ -4,6 +4,7 @@ import koreatech.cse.domain.Authority;
 import koreatech.cse.domain.User;
 import koreatech.cse.domain.oauth2.daum.DaumProfileDetail;
 import koreatech.cse.domain.oauth2.facebook.FacebookProfile;
+import koreatech.cse.domain.oauth2.naver.NaverProfile;
 import koreatech.cse.repository.AuthorityMapper;
 import koreatech.cse.repository.UserMapper;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -111,7 +112,6 @@ public class UserService implements UserDetailsService {
 
         return "redirect:/";
     }
-
 
     public String naverLogin(HttpServletRequest request, FacebookProfile facebookProfile) throws Exception{
         User user = userMapper.findByEmail(facebookProfile.getId());

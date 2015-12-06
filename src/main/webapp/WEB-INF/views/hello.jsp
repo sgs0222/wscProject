@@ -52,6 +52,8 @@ ${name}<br/>
 
 <sec:authorize access="hasRole('ROLE_ADMIN')">
     이 문장은 ROLE_ADMIN 권한을 가진 사람에게만 보입니다.<br/>
+    <a href="/oauth/naverLogin">Naver cafe database update</a><br/>
+
 </sec:authorize>
 
 </body>

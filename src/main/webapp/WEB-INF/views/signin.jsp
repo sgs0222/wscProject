@@ -13,8 +13,6 @@
     </form>
     <a href="/oauth2/daum_authorization_code">Daum으로 로그인</a><br/>
     <a href="/oauth2/facebook_authorization_code">Facebook으로 로그인</a><br/>
-    <a href="/oauth2/naverLogin">naver로 로그인</a><br/>
-    <a href="/oauth2/naver_authorization_code">naver로 로그인</a><br/>
-
+    <a href="/oauth/naverLogin">naverCafe로 로그인</a><br/>
 </body>
 </html>

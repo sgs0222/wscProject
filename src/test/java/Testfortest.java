@@ -1,4 +1,9 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.request.GetRequest;
+import com.sun.deploy.net.HttpResponse;
 import koreatech.cse.service.UserService;
+import mypackage.*;
 import org.apache.ibatis.annotations.ResultType;
 import org.junit.After;
 import org.junit.Before;
@@ -41,62 +46,48 @@ public class Testfortest {
     private UserService userService;
     @Value("${env.text}")
     private String envText;
+    private JobType jobType;
 
     int a;
 
-    @Before
-    public void setup() {
-        System.out.println("setup");
-        this.mockMvc = webAppContextSetup(this.wac).build();
-        int a = 10;
-
-        System.out.println("wac: " + wac);
-        System.out.println("this: " + this);
-    }
-
     @Test
     public void jobTest() {
-        String jobUrl = "http://api.saramin.co.kr/job-search";
+        String jobUrl = "http://api.saramin.co.kr/job-search?";
 
         RestTemplate restTemplate = new RestTemplate();
+        ObjectMapper objectMapper = new ObjectMapper();
+
         try {
-            UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(jobUrl);
+            UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(jobUrl)
+                    .queryParam("keywords", "프로그래밍+IT")
+                    .queryParam("job_category", "4")///it관련
+                    .queryParam("loc_cd", "101000")//서울
+                    .queryParam("edu_lv", "8")//대학교 졸업 이상
+                    .queryParam("fields", "posting-date")//게시일 순으로 정렬
+                    .queryParam("count", "110");//max count
 
             System.out.println("job :" + builder.build().encode().toUri());
 
-            ResultType resultType = restTemplate.getForObject(builder.build().encode().toUri(), ResultType.class);
+            JobSearchType jobType= restTemplate.getForObject(builder.build().encode().toUri(), JobSearchType.class);
+
+            String count = jobType.getJobs().getCount();
+
+
+            System.out.println("Total count :" + count);
+
+            for(int i=0; i < Integer.parseInt(count); i++) {
+                String keyword = jobType.getJobs().getJob().get(i).getKeyword();
+                String company = jobType.getJobs().getJob().get(i).getCompany().getName().getHref();//링크 누르면 이동
+                String salary = jobType.getJobs().getJob().get(i).getSalary().getCode();
+
+                System.out.println(company);
+                System.out.println(keyword);
+                System.out.println(salary);
+            }
 
 
         } catch (HttpClientErrorException e) {
-
+            System.out.println("Exception : " + e.getStatusCode() + ": " + e.getStatusText());
         }
-    }
-
-
-    @Test
-    public void diTest() throws Exception {
-        assertNotEquals(userService, null);
-    }
-
-    @Test
-    public void userServiceTest() throws Exception {
-        assertEquals(userService.countAuthoritiesRoleUser(), userService.countUsers());
-    }
-
-    @Test
-    public void printProperties() {
-        System.out.println(userService);
-    }
-
-    @Test(expected = UsernameNotFoundException.class)
-    public void getUsers() throws Exception {
-        UserDetails userDetails = userService.loadUserByUsername("unknwn_id");
-        System.out.println(userDetails);
-    }
-
-    @After
-    public  void wrapup() {
-        System.out.println("wrapup");
-        System.out.println();
     }
 }
