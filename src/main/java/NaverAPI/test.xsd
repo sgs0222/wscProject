@@ -1,0 +1,29 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="nhncorp.naverservice.community.cafe.ArticleList">
+  <xs:element name="result">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:byte" name="itemCount"/>
+        <xs:element name="articles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="article" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:int" name="articleid"/>
+                    <xs:element type="xs:short" name="menuid"/>
+                    <xs:element type="xs:string" name="subject"/>
+                    <xs:element type="xs:string" name="nickname"/>
+                    <xs:element type="xs:string" name="writedate"/>
+                    <xs:element type="xs:string" name="newArticle"/>
+                    <xs:element type="xs:short" name="readCount"/>
+                    <xs:element type="xs:byte" name="commentCount"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

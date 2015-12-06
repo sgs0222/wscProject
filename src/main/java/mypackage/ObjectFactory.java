@@ -8,18 +8,18 @@ import javax.xml.namespace.QName;
 
 
 /**
- * This object contains factory methods for each 
- * Java content interface and Java element interface 
- * generated in the mypackage package. 
- * <p>An ObjectFactory allows you to programatically 
- * construct new instances of the Java representation 
- * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
- * type definitions, element declarations and model 
- * groups.  Factory methods for each of these are 
+ * This object contains factory methods for each
+ * Java content interface and Java element interface
+ * generated in the mypackage package.
+ * <p>An ObjectFactory allows you to programatically
+ * construct new instances of the Java representation
+ * for XML content. The Java representation of XML
+ * content can consist of schema derived interfaces
+ * and classes representing the binding of schema
+ * type definitions, element declarations and model
+ * groups.  Factory methods for each of these are
  * provided in this class.
- * 
+ *
  */
 @XmlRegistry
 public class ObjectFactory {
@@ -28,14 +28,14 @@ public class ObjectFactory {
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: mypackage
-     * 
+     *
      */
     public ObjectFactory() {
     }
 
     /**
      * Create an instance of {@link JobSearchType }
-     * 
+     *
      */
     public JobSearchType createJobSearchType() {
         return new JobSearchType();
@@ -43,7 +43,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JobType }
-     * 
+     *
      */
     public JobType createJobType() {
         return new JobType();
@@ -51,7 +51,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link SalaryType }
-     * 
+     *
      */
     public SalaryType createSalaryType() {
         return new SalaryType();
@@ -59,7 +59,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JobsType }
-     * 
+     *
      */
     public JobsType createJobsType() {
         return new JobsType();
@@ -67,7 +67,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CloseTypeType }
-     * 
+     *
      */
     public CloseTypeType createCloseTypeType() {
         return new CloseTypeType();
@@ -75,7 +75,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link NameType }
-     * 
+     *
      */
     public NameType createNameType() {
         return new NameType();
@@ -83,7 +83,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link IndustryType }
-     * 
+     *
      */
     public IndustryType createIndustryType() {
         return new IndustryType();
@@ -91,7 +91,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JobCategoryType }
-     * 
+     *
      */
     public JobCategoryType createJobCategoryType() {
         return new JobCategoryType();
@@ -99,7 +99,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JobTypeType }
-     * 
+     *
      */
     public JobTypeType createJobTypeType() {
         return new JobTypeType();
@@ -107,7 +107,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link ExperienceLevelType }
-     * 
+     *
      */
     public ExperienceLevelType createExperienceLevelType() {
         return new ExperienceLevelType();
@@ -115,7 +115,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link RequiredEducationLevelType }
-     * 
+     *
      */
     public RequiredEducationLevelType createRequiredEducationLevelType() {
         return new RequiredEducationLevelType();
@@ -123,7 +123,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link LocationType }
-     * 
+     *
      */
     public LocationType createLocationType() {
         return new LocationType();
@@ -131,7 +131,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link PositionType }
-     * 
+     *
      */
     public PositionType createPositionType() {
         return new PositionType();
@@ -139,7 +139,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link CompanyType }
-     * 
+     *
      */
     public CompanyType createCompanyType() {
         return new CompanyType();
@@ -147,7 +147,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link JobSearchType }{@code >}}
-     * 
+     *
      */
     @XmlElementDecl(namespace = "", name = "job-search")
     public JAXBElement<JobSearchType> createJobSearch(JobSearchType value) {

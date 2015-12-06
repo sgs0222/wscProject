@@ -72,6 +72,7 @@ public class Testfortest {
 
             String count = jobType.getJobs().getCount();
 
+
             System.out.println("Total count :" + count);
 
             for(int i=0; i < Integer.parseInt(count); i++) {

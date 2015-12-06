@@ -113,12 +113,12 @@ public class UserService implements UserDetailsService {
         return "redirect:/";
     }
 
-    public String naverLogin(HttpServletRequest request, NaverProfile naverProfile) throws Exception{
-        User user = userMapper.findByEmail(naverProfile.getId());
+    public String naverLogin(HttpServletRequest request, FacebookProfile facebookProfile) throws Exception{
+        User user = userMapper.findByEmail(facebookProfile.getId());
         if (user == null) {
             user = new User();
-            user.setEmail(naverProfile.getId());
-            user.setName(naverProfile.getName());
+            user.setEmail(facebookProfile.getId());
+            user.setName(facebookProfile.getName());
             user.setAge(-2);
             user.setPassword("0000");
             signup(user);
@@ -135,8 +135,6 @@ public class UserService implements UserDetailsService {
 
         return "redirect:/";
     }
-
-
 
     public int countUsers() {
         return userMapper.count();
