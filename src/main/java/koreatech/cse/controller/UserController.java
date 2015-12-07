@@ -72,6 +72,11 @@ public class UserController {
         return "signin";
     }
 
+
+
+
+
+
     @RequestMapping(value="/signinSuccess")
     public String signinSuccess() {
         System.out.println("signin Success");

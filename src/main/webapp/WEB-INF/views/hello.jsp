@@ -15,6 +15,7 @@ ${name}<br/>
 <sec:authorize access="isAnonymous()">
 <a href="/user/signin">로그인</a>
 <a href="/user/signup">회원가입</a>
+    <a href="/testJobState">사람인 데이터 확인</a>
 </sec:authorize>
 
 <sec:authorize access="hasAnyRole('ROLE_USER', 'ROLE_ADMIN')">
