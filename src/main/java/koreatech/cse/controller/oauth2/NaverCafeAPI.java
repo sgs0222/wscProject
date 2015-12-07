@@ -32,21 +32,25 @@ import java.util.*;
 @Controller
 @RequestMapping("/oauth")
 public class NaverCafeAPI {
-/*
+
+    //-----------------------setting dev
+
     private static final String callbackUrl = "http://testoauth2.com:8080/oauth/callback";
     private static final String requestTokenUrl = "https://nid.naver.com/naver.oauth?mode=req_req_token";
     private static final String authorizeUrl = "https://nid.naver.com/naver.oauth?mode=auth_req_token";
     private static final String accessTokenUrl = "https://nid.naver.com/naver.oauth?mode=req_acc_token";
     private static final String consumerKey = "rd3ah1kSKs8f3Fvx5Zms";
-    private static final String consumerSecret = "U60pO2DexD";*/
+    private static final String consumerSecret = "U60pO2DexD";
 
-
+    //---------------------------setting deploy
+/*
     private static final String callbackUrl = "http://default-environment-3xvzmdjgmm.elasticbeanstalk.com/oauth/callback";
     private static final String requestTokenUrl = "https://nid.naver.com/naver.oauth?mode=req_req_token";
     private static final String authorizeUrl = "https://nid.naver.com/naver.oauth?mode=auth_req_token";
     private static final String accessTokenUrl = "https://nid.naver.com/naver.oauth?mode=req_acc_token";
     private static final String consumerKey = " rWQULw77nGPfThBJh4pq";
     private static final String consumerSecret = "atjmuOKZdE";
+*/
     @Inject
     private UserService userService;
 
@@ -56,9 +60,9 @@ public class NaverCafeAPI {
     public String naverLogin(HttpSession session) throws OAuthMessageSignerException, OAuthNotAuthorizedException, OAuthExpectationFailedException,
             OAuthCommunicationException {
         System.out.println("Login is Called");
-
         OAuthConsumer consumer = new DefaultOAuthConsumer(consumerKey, consumerSecret);
         OAuthProvider provider = new DefaultOAuthProvider(requestTokenUrl, accessTokenUrl, authorizeUrl);
+
         String oAuthUrl = provider.retrieveRequestToken(consumer, callbackUrl);
         session.setAttribute("consumer", consumer);
         session.setAttribute("provider", provider);
@@ -83,7 +87,7 @@ public class NaverCafeAPI {
         String accessTokenSecret = (String) session.getAttribute("accessTokenSecret");
         consumer.setTokenWithSecret(accessToken, accessTokenSecret);
 
-        return "redirect:" + "getNaverCafeInfo";
+        return "redirect:" + "getNaverCafeInfo2";
     }
 
     @RequestMapping("/getNaverCafeInfo")
@@ -200,6 +204,7 @@ public class NaverCafeAPI {
                     map.put("subject",subject);
                     map.put("writedate", writedate);
                     list.add(map);
+                    System.out.println(map.toString());
                     competitions.add(new competitionType(articleId,subject,writedate));
                 }
             }
@@ -213,7 +218,7 @@ public class NaverCafeAPI {
             System.out.println("parse error" + e.getMessage());
         }
 
-        System.out.println(competitions);
+
 
 
         return userService.naverDBsave(competitions);
