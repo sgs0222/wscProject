@@ -7,6 +7,8 @@ import koreatech.cse.domain.oauth2.facebook.FacebookProfile;
 import koreatech.cse.domain.oauth2.naver.NaverProfile;
 import koreatech.cse.repository.AuthorityMapper;
 import koreatech.cse.repository.UserMapper;
+import koreatech.cse.repository.naverMapper;
+import mypackage.competitionType;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
@@ -31,6 +33,21 @@ public class UserService implements UserDetailsService {
     private AuthorityMapper authorityMapper;
     @Inject
     private PasswordEncoder passwordEncoder;
+    @Inject
+    private naverMapper navermapper;
+
+
+    public String naverDBsave(List<competitionType> competitions ){
+        if(competitions.isEmpty()){
+            System.out.println("errorDB");
+            return "redirect:/";
+        }
+        for(int i = 0;i <competitions.size(); i++) {
+          navermapper.insert(new competitionType(competitions.get(i).getArticleId(),competitions.get(i).getSubjectId(),competitions.get(i).getWritedata()));
+        }
+
+        return "redirect:/";
+    }
 
 
     public Boolean signup(User user) {

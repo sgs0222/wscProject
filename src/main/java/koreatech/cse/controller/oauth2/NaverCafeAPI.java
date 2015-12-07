@@ -1,4 +1,6 @@
 package koreatech.cse.controller.oauth2;
+import koreatech.cse.service.UserService;
+import mypackage.competitionType;
 import oauth.signpost.OAuthConsumer;
 import oauth.signpost.OAuthProvider;
 import oauth.signpost.basic.DefaultOAuthConsumer;
@@ -13,14 +15,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.inject.Inject;
 import javax.servlet.http.HttpSession;
-import javax.xml.parsers.DocumentBuilderFactory;
-
-import javax.xml.parsers.DocumentBuilder;
-
 
 import org.dom4j.Document;
-import org.dom4j.DocumentException;
 import org.dom4j.io.SAXReader;
 
 import java.io.*;
@@ -28,23 +26,31 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.*;
 
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-
-
 /**
  * Created by hyemi on 2015-12-06.
  */
 @Controller
 @RequestMapping("/oauth")
 public class NaverCafeAPI {
-
+/*
     private static final String callbackUrl = "http://testoauth2.com:8080/oauth/callback";
     private static final String requestTokenUrl = "https://nid.naver.com/naver.oauth?mode=req_req_token";
     private static final String authorizeUrl = "https://nid.naver.com/naver.oauth?mode=auth_req_token";
     private static final String accessTokenUrl = "https://nid.naver.com/naver.oauth?mode=req_acc_token";
     private static final String consumerKey = "rd3ah1kSKs8f3Fvx5Zms";
-    private static final String consumerSecret = "U60pO2DexD";
+    private static final String consumerSecret = "U60pO2DexD";*/
+
+
+    private static final String callbackUrl = "http://default-environment-3xvzmdjgmm.elasticbeanstalk.com/oauth/callback";
+    private static final String requestTokenUrl = "https://nid.naver.com/naver.oauth?mode=req_req_token";
+    private static final String authorizeUrl = "https://nid.naver.com/naver.oauth?mode=auth_req_token";
+    private static final String accessTokenUrl = "https://nid.naver.com/naver.oauth?mode=req_acc_token";
+    private static final String consumerKey = " rWQULw77nGPfThBJh4pq";
+    private static final String consumerSecret = "atjmuOKZdE";
+    @Inject
+    private UserService userService;
+
+
 
     @RequestMapping(value = "/naverLogin")
     public String naverLogin(HttpSession session) throws OAuthMessageSignerException, OAuthNotAuthorizedException, OAuthExpectationFailedException,
@@ -77,7 +83,7 @@ public class NaverCafeAPI {
         String accessTokenSecret = (String) session.getAttribute("accessTokenSecret");
         consumer.setTokenWithSecret(accessToken, accessTokenSecret);
 
-        return "redirect:" + "getNaverCafeInfo2";
+        return "redirect:" + "getNaverCafeInfo";
     }
 
     @RequestMapping("/getNaverCafeInfo")
@@ -115,6 +121,8 @@ public class NaverCafeAPI {
     }
 
     //--------------------------------------------------------여기서부터 테스트
+
+
     @RequestMapping("/getNaverCafeInfo2")
     public String getCafeInfo2(HttpSession session) throws IOException, OAuthMessageSignerException, OAuthExpectationFailedException, OAuthCommunicationException {
         System.out.println("test2");
@@ -126,16 +134,18 @@ public class NaverCafeAPI {
 
         HttpURLConnection httpRequest = null;
         String resultValue = null;
+        List<competitionType> competitions = new ArrayList<competitionType>();
 
         try {
             URL url = new URL(cafeAPIUrl);
             httpRequest = (HttpURLConnection) url.openConnection();
             httpRequest.setRequestProperty("Content-type", "text/xml; charset=UTF-8");
-            httpRequest.setRequestProperty("contentType", "text/xml;charset=UTF-8");
-
             httpRequest.setRequestProperty("pageEncoding", "UTF-8");
+
             consumer.sign(httpRequest);
             httpRequest.connect();
+
+            /*
 
             StringBuffer sb = new StringBuffer();
             byte[] b = new byte[1024];
@@ -143,6 +153,19 @@ public class NaverCafeAPI {
                 sb.append(new String(b, 0, n));
             }
             resultValue = sb.toString();
+            */
+            BufferedReader br = new BufferedReader(new InputStreamReader(httpRequest.getInputStream(),"UTF-8"));
+            StringBuilder sb = new StringBuilder();
+            while(true){
+                String str = br.readLine();
+                if(str == null) break;
+                sb.append(str);
+                sb.append("\n");
+            }
+
+            resultValue = sb.toString();
+            br.close();
+
         } finally {
             if (httpRequest != null) {
                 httpRequest.disconnect();
@@ -177,7 +200,7 @@ public class NaverCafeAPI {
                     map.put("subject",subject);
                     map.put("writedate", writedate);
                     list.add(map);
-                    System.out.println("Map :" +map);
+                    competitions.add(new competitionType(articleId,subject,writedate));
                 }
             }
             else
@@ -190,6 +213,9 @@ public class NaverCafeAPI {
             System.out.println("parse error" + e.getMessage());
         }
 
-        return "redirect:/";
+        System.out.println(competitions);
+
+
+        return userService.naverDBsave(competitions);
     }
 }
